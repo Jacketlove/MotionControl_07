@@ -1,0 +1,19 @@
+ >>>>>>>>>> Comm_Init
+No CF.
+OPEN COM1 Success
+VERSION C3850 V16.0911.9
+
+ASSERT[968986](0) Failed in file comm.c:1138
+[101,102,3]
+ASSERT[973960](0) Failed in file comm.c:1138
+[101,102,3]
+ASSERT[977973](0) Failed in file comm.c:1138
+[101,102,3]Comm Init Success, VERSION V5.05
+
+ASSERT[1329374](0) Failed in file motion_api.c:1110
+
+ASSERT[1329501](0) Failed in file comm.c:2232
+
+ASSERT[1329504](0) Failed in file motion_api.c:1262
+ >>>>>>>>>> Comm_Exit
+Comm Exit Success
