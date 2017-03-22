@@ -2,6 +2,8 @@ package com.tswe.common.app;
 
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
+
+import com.tswe.common.util.JNAInvokeDll;
 import com.tswe.common.view.AbstractFxmlView;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -20,7 +22,9 @@ public abstract class AbstractJavaFxApplicationSupport extends Application {
 	@Override
 	public void init() throws Exception {
 		//applicationContext = SpringApplication.run(getClass(), savedArgs);
-		applicationContext = new FileSystemXmlApplicationContext("classpath:applicationContext.xml"); 
+		applicationContext = new FileSystemXmlApplicationContext("classpath:applicationContext.xml");
+		//打开结果反馈
+		JNAInvokeDll.motionDrvDll.Motion_SetResultSwitch(1);
 	}
 
 	@Override

@@ -25,7 +25,7 @@ public class AxiaTest {
 	
 	@Test
 	public void setPulseOutmodeTest(){
-		for(Axia axia: controlBoards.get(0).getAxias()){
+		for(Axis axia: controlBoards.get(0).getAxias()){
 			axia.setPulseOutmode(0);
 		}
 	}

@@ -1,20 +1,13 @@
 package com.tswe.autotest.service;
 
 import org.springframework.stereotype.Component;
-import com.tswe.autotest.model.Axia;
+import com.tswe.autotest.model.Axis;
 import com.tswe.autotest.model.ControlBoard;
+import com.tswe.common.util.CommonUtil;
 import com.tswe.common.util.JNAInvokeDll;
 
 @Component
 public class MotionCotrolService {
-	
-	public void motionControl(Axia axia){
-		
-	}
-	
-	public void goHome(ControlBoard controlBoard){
-		
-	}
 	
 	/**
 	 * 脉冲输出方式的设置
@@ -26,7 +19,7 @@ public class MotionCotrolService {
 	 * @return void
 	 * @version 0.1
 	 */
-	public void setPulseOutmode(Axia axia, int outmode){
+	public void setPulseOutmode(Axis axia, int outmode){
 		axia.setPulseOutmode(outmode);
 	}
 	
@@ -39,7 +32,7 @@ public class MotionCotrolService {
 	 * @return void
 	 * @version 0.1
 	 */
-	public void configELMode(Axia axia, boolean iElStopMode, boolean iElLogic){
+	public void configELMode(Axis axia, boolean iElStopMode, boolean iElLogic){
 		if ( false == iElStopMode ){
 	        if( false == iElLogic ){
 	        	axia.configELMode(0);
@@ -59,7 +52,7 @@ public class MotionCotrolService {
 	}
 	
 	public void configELMode(ControlBoard controlBoard, boolean iElStopMode, boolean iElLogic){
-		for(Axia axia: controlBoard.getAxias()){
+		for(Axis axia: controlBoard.getAxias()){
 			configELMode(axia, iElStopMode, iElLogic);
 		}
 	}
@@ -78,8 +71,8 @@ public class MotionCotrolService {
 	 * @return void
 	 * @version 0.1
 	 */
-	public void setHOMEPinLogic(Axia axia, int org_logic) {
-		axia.setHOMEPinLogic(org_logic, 1);
+	public void setHOMEPinLogic(Axis axia, int org_logic, int filter) {
+		axia.setHOMEPinLogic(org_logic, filter);
 	}
 	
 	/**
@@ -89,12 +82,12 @@ public class MotionCotrolService {
 	 * @param EZ_count 仅mode为1时有效,取值1-16
 	 * @version 0.1
 	 */
-	public void configHomeMode(Axia axia){
+	public void configHomeMode(Axis axia){
 		axia.configHomeMode(0, 0);
 	}
 	
 	public void configHomeMode(ControlBoard controlBoard){
-		for(Axia axia: controlBoard.getAxias()){
+		for(Axis axia: controlBoard.getAxias()){
 			axia.configHomeMode(0, 0);
 		}
 	}
@@ -106,12 +99,12 @@ public class MotionCotrolService {
 	 * @param vel_mode   0-低速回原点,1-高速回原点
 	 * @version 0.1
 	 */
-	public void homeMove(Axia axia, int mhome_mode, int vel_mode){
+	public void homeMove(Axis axia, int mhome_mode, int vel_mode){
 		axia.homeMove(mhome_mode, vel_mode);
 	}
 	
 	public void homeMove(ControlBoard controlBoard, int home_mode, int vel_mode){
-		for(Axia axia: controlBoard.getAxias()){
+		for(Axis axia: controlBoard.getAxias()){
 			axia.homeMove(home_mode, vel_mode);
 		}
 	}
@@ -134,12 +127,12 @@ public class MotionCotrolService {
 	 *            总减速时间，单位s
 	 * @version 0.1
 	 */
-	public void setProfile(Axia axia, double Min_Vel, double Max_Vel, double Tacc, double Tdec) {
+	public void setProfile(Axis axia, double Min_Vel, double Max_Vel, double Tacc, double Tdec) {
 		axia.setProfile(Min_Vel, Max_Vel, Tacc, Tdec);
 	}
 	
 	public void setProfile(ControlBoard controlBoard, double Min_Vel, double Max_Vel, double Tacc, double Tdec, int home_mode, int vel_mode){
-		for(Axia axia: controlBoard.getAxias()){
+		for(Axis axia: controlBoard.getAxias()){
 			axia.setProfile(Min_Vel, Max_Vel, Tacc, Tdec);
 		}
 	}
@@ -159,12 +152,12 @@ public class MotionCotrolService {
 	 *            总减速时间，单位s
 	 * @version 0.1
 	 */
-	public void setStProfile(Axia axia, double Min_Vel, double Max_Vel, double Tacc, double Tdec, double Tsacc, double Tsdec) {
+	public void setStProfile(Axis axia, double Min_Vel, double Max_Vel, double Tacc, double Tdec, double Tsacc, double Tsdec) {
 		axia.setStProfile(Min_Vel, Max_Vel, Tacc, Tdec, Tsacc, Tsdec);
 	}
 	
 	public void setStProfile(ControlBoard controlBoard, double Min_Vel, double Max_Vel, double Tacc, double Tdec, double Tsacc, double Tsdec){
-		for(Axia axia: controlBoard.getAxias()){
+		for(Axis axia: controlBoard.getAxias()){
 			axia.setStProfile(Min_Vel, Max_Vel, Tacc, Tdec, Tsacc, Tsdec);
 		}
 	}
@@ -178,12 +171,12 @@ public class MotionCotrolService {
 	 *            新的运行速度，单位pps
 	 * @version 0.1
 	 */
-	public void changeSpeed(Axia axia, double Curr_Vel) {
+	public void changeSpeed(Axis axia, double Curr_Vel) {
 		axia.changeSpeed(Curr_Vel);
 	}
 	
 	public void changeSpeed(ControlBoard controlBoard, double Curr_Vel){
-		for(Axia axia: controlBoard.getAxias()){
+		for(Axis axia: controlBoard.getAxias()){
 			axia.changeSpeed(Curr_Vel);
 		}
 	}
@@ -199,7 +192,7 @@ public class MotionCotrolService {
 	 * @param posi_mode 0-相对位移,1-绝对位移
 	 * @version 0.1
 	 */
-	public void tPMove(Axia axia, int Dist, int posi_mode){
+	public void tPMove(Axis axia, int Dist, int posi_mode){
 		axia.tPMove(Dist, posi_mode);
 	}
 	
@@ -214,7 +207,7 @@ public class MotionCotrolService {
 	 *            0-相对位移,1-绝对位移
 	 * @version 0.1
 	 */
-	public void sPMove(Axia axia, int Dist, int posi_mode){
+	public void sPMove(Axis axia, int Dist, int posi_mode){
 		axia.sPMove(Dist, posi_mode);
 	}
 	
@@ -225,9 +218,81 @@ public class MotionCotrolService {
 	 * @param dir 0-负方向,1-正方向
 	 * @version 0.1
 	 */
-	 public void tVMove(Axia axia, int dir){
+	 public void tVMove(Axis axia, int dir){
 		 axia.tVMove(dir);
 	 }
 	 
+	 /**
+	 * 减速停止
+	 * 
+	 * @param axis      轴号
+	 * @param Tdec      减速时间，单位s
+	 * @version 0.1
+	 */
+	 public void decelStop(Axis axia, double Tdec){
+		 axia.decelStop(Tdec);
+	 }
+		 
+	 /**
+	 * 立即停止
+	 * 
+	 * @param axis      轴号
+	 * @version 0.1
+	 */
+	 public void motionImdStop(Axis axia){
+		 axia.motionImdStop();
+	 }
 	 
+	 /**
+	 * 读取轴运动状态
+	 * 
+	 * @param axis
+	 *            轴号
+	 * @return 0:运动 1:停止
+	 * @version 0.1
+	 */
+	public int checkDone(Axis axia) {
+		return axia.checkDone();
+	}
+	
+	public void allAxiasToHome(){
+		
+	}
+	
+	
+	
+	/**
+	 * 单轴回原点
+	 * @param axis 轴对象
+	 * @param org_logic 0-低有效,1-高有效
+	 * @param mhome_mode 1-正方向回原点,2-负方向回原点
+	 * @param vel_mode 0-低速回原点,1-高速回原点
+	 *
+	 */
+	public void singleAxiaGoHome(Axis axis, int org_logic, int mhome_mode, int vel_mode){
+		
+		//配置运动曲线
+		setProfile(axis, 1000, 5000, 0.5, 0.5);
+		//配置原点信号
+		setHOMEPinLogic(axis, org_logic, 1);
+		//设置回原点模式
+		configHomeMode(axis);
+		//原点运动开始 负方向回原点
+		homeMove(axis, 2, 1);
+	}
+	
+	/**
+	 * 配置限位信号工作模式
+	 * 
+	 * @param axisNum 轴号
+	 * 
+	 * @param el_mode
+	 *            0-立即停,低有效 1-减速停,低有效 2-立即停,高有效 3-减速停,高有效
+	 * @return false 调用失败, true 调用成功
+	 * @version 0.1
+	 */
+	public boolean configELMode(Axis axis, int el_mode){
+		return axis.configELMode(el_mode);
+	}
+	
 }

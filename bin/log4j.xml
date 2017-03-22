@@ -102,19 +102,10 @@
 		定义全局的日志输出级别,但是在输出目的地的配置中配置的具体输出级别优先级高于全局定义的优先级。  
 		如果在railyFile中定义<param name="Threshold" value="info"></param>，
 		那么将会把info以上级别的信息输出  
-     -->
-     
-    <!--
-    × Debug
-	× Info
-	× Warn
-	× Error
-	× Fatal 
-	-->
-	
+     --> 
 	<!-- Root Logger -->
 	<root>
-		<priority value="Info" />
+		<priority value="infor" />
 		<appender-ref ref="console" />
 		<appender-ref ref="filelog_daily" />
 	</root>

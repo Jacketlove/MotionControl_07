@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- spring3.0配置文件固定写法 -->
-<beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans  
-           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
-           http://www.springframework.org/schema/context  
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:aop="http://www.springframework.org/schema/aop"
+        xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context-3.0.xsd
            http://www.springframework.org/schema/aop
            http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 	<!-- 使用此配置就可以在源码中写Annotation(注解)，注解编程 -->
 	<context:annotation-config />
+	
 	<!-- 使用此配置代码，spring会自动扫描com.yusj包下的所有带@component注解的Class文件 @Component包括：@controller,@service,@repository和@component 
 		当分不清楚Class具体要做什么工作时，可以统一写成@component. @controller：一般写在控制层。 @service：一般写在服务层。 
 		@repository：一般写在持久层，也就是DAO。 @component （把普通pojo实例化到spring容器中，相当于配置文件中的<bean 
 		id="" class=""/> -->
 	<context:component-scan base-package="com.tswe" />
+	
+	<bean id="jNAInvokeDllAspect" class="com.tswe.common.util.JNAInvokeDllAspect"/>
+	 
+	<aop:config>
+        <aop:aspect ref="jNAInvokeDllAspect">
+             <aop:after  method="after"
+             			 pointcut= "execution(* com.tswe.autotest.service..*.*(..))"/>
+        </aop:aspect>
+    </aop:config>
 	
 	<bean id="log4jInitialization"
 		class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
@@ -28,6 +40,4 @@
 		</property>
 	</bean>
 	
-	<aop:aspectj-autoproxy/>
-	
-</beans>  
+</beans>

@@ -3,17 +3,31 @@ No CF.
 OPEN COM1 Success
 VERSION C3850 V16.0911.9
 
-ASSERT[968986](0) Failed in file comm.c:1138
+ASSERT[1210623](0) Failed in file comm.c:1138
 [101,102,3]
-ASSERT[973960](0) Failed in file comm.c:1138
+ASSERT[1215233](0) Failed in file comm.c:1138
 [101,102,3]
-ASSERT[977973](0) Failed in file comm.c:1138
+ASSERT[1219850](0) Failed in file comm.c:1138
 [101,102,3]Comm Init Success, VERSION V5.05
 
-ASSERT[1329374](0) Failed in file motion_api.c:1110
+ASSERT[9375311](0) Failed in file serial.c:630
 
-ASSERT[1329501](0) Failed in file comm.c:2232
+ASSERT[9375318](0) Failed in file serial.c:750
 
-ASSERT[1329504](0) Failed in file motion_api.c:1262
- >>>>>>>>>> Comm_Exit
+Rerr::[0##366##]
+ASSERT[10819426](0) Failed in file serial.c:630
+
+ASSERT[10819434](0) Failed in file serial.c:750
+
+Rerr::[0##366##]
+ASSERT[27899049](0) Failed in file serial.c:630
+
+ASSERT[27899057](0) Failed in file serial.c:750
+
+Rerr::[0##366##]
+ASSERT[29356095](0) Failed in file serial.c:630
+
+ASSERT[29356101](0) Failed in file serial.c:750
+
+Rerr::[0##366##] >>>>>>>>>> Comm_Exit
 Comm Exit Success
