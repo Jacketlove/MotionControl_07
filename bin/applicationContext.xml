@@ -22,12 +22,12 @@
 	
 	<bean id="jNAInvokeDllAspect" class="com.tswe.common.util.JNAInvokeDllAspect"/>
 	 
-	<aop:config>
+	<!--<aop:config>
         <aop:aspect ref="jNAInvokeDllAspect">
              <aop:after  method="after"
              			 pointcut= "execution(* com.tswe.autotest.service..*.*(..))"/>
         </aop:aspect>
-    </aop:config>
+    </aop:config>-->
 	
 	<bean id="log4jInitialization"
 		class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">

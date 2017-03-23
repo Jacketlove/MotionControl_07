@@ -44,7 +44,7 @@ public class MotionControlServiceTest {
 	public void homeMoveTest(){
 		
 		//配置运动曲线
-		motionCotrolService.setProfile(controlBoards.get(0).getAxias()[axis], 1000, 2000, 0.5, 0.5);
+		motionCotrolService.setVel(controlBoards.get(0).getAxias()[axis], 1000.0, 2000.0, 0.5, 0.5);
 		//配置原点信号
 		motionCotrolService.setHOMEPinLogic(controlBoards.get(0).getAxias()[axis], 0, 1);
 		//设置回原点模式
@@ -56,33 +56,33 @@ public class MotionControlServiceTest {
 	@Test
 	public void tPMoveTest(){
 		//设置速度
-		motionCotrolService.setProfile(controlBoards.get(0).getAxias()[1], 2000, 4000, 0.5, 0.5);
+		motionCotrolService.setVel(controlBoards.get(0).getAxias()[1], 2000, 4000, 0.5, 0.5);
 		//设置运动方式
-		motionCotrolService.tPMove(controlBoards.get(0).getAxias()[1], -150000, 0);
+		motionCotrolService.move(controlBoards.get(0).getAxias()[1], -150000, 0);
 	}
 	
 	@Test
 	public void sPMoveTest(){
 		//设置S形速度曲线(按S段时间)
-		motionCotrolService.setStProfile(controlBoards.get(0).getAxias()[axis], 0, 1500, 1, 1, 0.5, 0.5);
+		motionCotrolService.setVel(controlBoards.get(0).getAxias()[axis], 0, 1500, 1, 1, 0.5, 0.5);
 		//设置运动方式:单轴S形定长运动(对称的S形加减速)
-		motionCotrolService.sPMove(controlBoards.get(0).getAxias()[axis], 3000, 0);
+		motionCotrolService.move(controlBoards.get(0).getAxias()[axis], 3000, 0);
 	}
 	
 	@Test
 	public void tVMove(){
 		//设置轴梯形运动曲线
-		motionCotrolService.setProfile(controlBoards.get(0).getAxias()[axis], 1000, 1500, 1, 1);
+		motionCotrolService.setVel(controlBoards.get(0).getAxias()[axis], 1000, 1500, 1, 1);
 		//单轴梯形加速连续运动
-		motionCotrolService.tVMove(controlBoards.get(0).getAxias()[axis], 1);
+		motionCotrolService.move(controlBoards.get(0).getAxias()[axis], 1);
 	}
 	
 	@Test
 	public void singleAxiaGoHomeTest(){
 		//配置运动曲线
-		motionCotrolService.setProfile(controlBoards.get(0).getAxias()[2], 1000, 5000, 0.5, 0.5);
+		motionCotrolService.setVel(controlBoards.get(0).getAxias()[2], 1000, 5000, 0.5, 0.5);
 		motionCotrolService.singleAxiaGoHome(controlBoards.get(0).getAxias()[2], 
-				Constant.ORGVALIDLOGIC, Constant.REVERSE, Constant.HIGHV);
+				Constant.ORGVALIDLOGIC, Constant.REVERSEGOHOME, Constant.HIGHV);
 	}
 	
 	@Test
@@ -90,11 +90,12 @@ public class MotionControlServiceTest {
 		//配置EL
 		motionCotrolService.configELMode(controlBoards.get(0).getAxias()[axis], 0);
 		//设置轴梯形运动曲线
-		motionCotrolService.setProfile(controlBoards.get(0).getAxias()[axis], 2000, 5000, 1, 1);
+		motionCotrolService.setVel(controlBoards.get(0).getAxias()[axis], 2000, 5000, 1, 1);
 		//单轴梯形加速连续运动
-		motionCotrolService.tVMove(controlBoards.get(0).getAxias()[axis], 1);
+		motionCotrolService.move(controlBoards.get(0).getAxias()[axis], 1);
 	}
 	
+	@SuppressWarnings("static-access")
 	@After
 	public void closeConnect(){
 		while(motionCotrolService.checkDone(controlBoards.get(0).getAxias()[axis]) == 0){

@@ -1,62 +1,310 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tswe.autotest.controller.MotionInitController">
 	<children>
-		<SplitPane dividerPositions="0.16666666666666666" layoutX="150.0" layoutY="48.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-			<items>
-				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-					<children>
-						<HBox layoutX="-19.0" layoutY="241.0" />
-					</children>
-				</AnchorPane>
-				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-					<children>
-						<GridPane layoutX="14.0" layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-							<columnConstraints>
-								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="161.0" minWidth="10.0" prefWidth="103.0" />
-								<ColumnConstraints hgrow="SOMETIMES" maxWidth="409.0" minWidth="10.0" prefWidth="104.0" />
-								<ColumnConstraints hgrow="SOMETIMES" maxWidth="420.0" minWidth="10.0" prefWidth="420.0" />
-							</columnConstraints>
-							<rowConstraints>
-								<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-								<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-								<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-							</rowConstraints>
-							<children>
-								<RadioButton fx:id="serialPort" mnemonicParsing="false" text="Serial Port" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                           <toggleGroup>
-                              <ToggleGroup fx:id="connectPortGroup" />
-                           </toggleGroup>
-                        </RadioButton>
-								<RadioButton mnemonicParsing="false" text="PCI Port" toggleGroup="$connectPortGroup" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-								<Label text="连接方式：" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" onAction="#connectButton" text="连接" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="120.0" text="X轴回原点" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="120.0" text="Y轴回原点" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                        <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="120.0" text="Z轴回原点" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-							</children>
-						</GridPane>
-                  <Label fx:id="label" layoutX="38.0" layoutY="354.0" text="Label" />
-					</children>
-				</AnchorPane>
-			</items>
-		</SplitPane>
+		<Pane prefHeight="200.0" prefWidth="200.0">
+			<children>
+				<TabPane prefHeight="516.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+					<tabs>
+						<Tab text="初始化">
+							<content>
+								<SplitPane prefHeight="160.0" prefWidth="200.0">
+									<items>
+										<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+											<children>
+												<GridPane layoutX="14.0" layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+													<columnConstraints>
+														<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="161.0" minWidth="10.0" prefWidth="103.0" />
+														<ColumnConstraints hgrow="SOMETIMES" maxWidth="409.0" minWidth="10.0" prefWidth="104.0" />
+														<ColumnConstraints hgrow="SOMETIMES" maxWidth="420.0" minWidth="10.0" prefWidth="420.0" />
+													</columnConstraints>
+													<rowConstraints>
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+													</rowConstraints>
+													<children>
+														<RadioButton fx:id="serialPort" mnemonicParsing="false" text="Serial Port" GridPane.columnIndex="1" GridPane.rowIndex="1">
+															<toggleGroup>
+																<ToggleGroup fx:id="connectPortGroup" />
+															</toggleGroup>
+														</RadioButton>
+														<RadioButton mnemonicParsing="false" text="PCI Port" toggleGroup="$connectPortGroup" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+														<Label text="连接方式：" GridPane.rowIndex="1" />
+														<Button mnemonicParsing="false" onAction="#connectButton" text="连接" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+													</children>
+												</GridPane>
+											</children>
+										</AnchorPane>
+									</items>
+								</SplitPane>
+							</content>
+						</Tab>
+						<Tab text="速度设置">
+							<content>
+								<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+									<children>
+										<GridPane layoutY="35.0" prefHeight="449.0" prefWidth="800.0">
+											<columnConstraints>
+												<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+												<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+												<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+												<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+												<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+												<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+											</columnConstraints>
+											<rowConstraints>
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+											</rowConstraints>
+											<children>
+												<Label prefHeight="20.0" prefWidth="31.0" text="X轴" GridPane.columnIndex="1" />
+												<Label text="Y轴" GridPane.columnIndex="2" />
+												<Label text="Z轴" GridPane.columnIndex="3" />
+												<Label text="W轴" GridPane.columnIndex="4" />
+												<Label text="T轴" GridPane.columnIndex="5" />
+												<Label text="参数" />
+												<Label text="运动方式" GridPane.rowIndex="1" />
+												<Label text="启始速度MinVel" GridPane.rowIndex="2" />
+												<Label text="运行速度MaxVel" GridPane.rowIndex="3" />
+												<Label text=" 加速时间Tacc" GridPane.rowIndex="4" />
+												<Label text="减速时间Tdec" GridPane.rowIndex="5" />
+												<Label text="Tsacc" GridPane.rowIndex="6" />
+												<Label text="Tsdec" GridPane.rowIndex="7" />
+												<TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+												<TextField GridPane.columnIndex="2" GridPane.rowIndex="2" />
+												<TextField GridPane.columnIndex="3" GridPane.rowIndex="2" />
+												<TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+												<TextField GridPane.columnIndex="2" GridPane.rowIndex="3" />
+												<TextField GridPane.columnIndex="3" GridPane.rowIndex="3" />
+												<TextField GridPane.columnIndex="4" GridPane.rowIndex="3" />
+												<TextField GridPane.columnIndex="4" GridPane.rowIndex="2" />
+												<TextField GridPane.columnIndex="5" GridPane.rowIndex="2" />
+												<TextField GridPane.columnIndex="5" GridPane.rowIndex="3" />
+												<TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+												<TextField GridPane.columnIndex="2" GridPane.rowIndex="4" />
+												<TextField GridPane.columnIndex="3" GridPane.rowIndex="4" />
+												<TextField GridPane.columnIndex="4" GridPane.rowIndex="4" />
+												<TextField GridPane.columnIndex="5" GridPane.rowIndex="4" />
+												<TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
+												<TextField GridPane.columnIndex="2" GridPane.rowIndex="5" />
+												<TextField GridPane.columnIndex="3" GridPane.rowIndex="5" />
+												<TextField GridPane.columnIndex="4" GridPane.rowIndex="5" />
+												<TextField GridPane.columnIndex="5" GridPane.rowIndex="5" />
+												<TextField GridPane.columnIndex="1" GridPane.rowIndex="6" />
+												<TextField GridPane.columnIndex="2" GridPane.rowIndex="6" />
+												<TextField GridPane.columnIndex="3" GridPane.rowIndex="6" />
+												<TextField GridPane.columnIndex="4" GridPane.rowIndex="6" />
+												<TextField GridPane.columnIndex="5" GridPane.rowIndex="6" />
+												<TextField GridPane.columnIndex="1" GridPane.rowIndex="7" />
+												<TextField GridPane.columnIndex="2" GridPane.rowIndex="7" />
+												<TextField GridPane.columnIndex="3" GridPane.rowIndex="7" />
+												<TextField GridPane.columnIndex="4" GridPane.rowIndex="7" />
+												<TextField GridPane.columnIndex="5" GridPane.rowIndex="7" />
+												<ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+													<items>
+														<FXCollections fx:factory="observableArrayList">
+															<String fx:value="T形速度曲线" />
+															<String fx:value="S形速度曲线" />
+														</FXCollections>
+													</items>
+													<value>
+														<String fx:value="T形速度曲线" />
+													</value>
+												</ComboBox>
+												<ComboBox prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+													<items>
+														<FXCollections fx:factory="observableArrayList">
+															<String fx:value="T形速度曲线" />
+															<String fx:value="S形速度曲线" />
+														</FXCollections>
+													</items>
+													<value>
+														<String fx:value="T形速度曲线" />
+													</value>
+												</ComboBox>
+												<ComboBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+													<items>
+														<FXCollections fx:factory="observableArrayList">
+															<String fx:value="T形速度曲线" />
+															<String fx:value="S形速度曲线" />
+														</FXCollections>
+													</items>
+													<value>
+														<String fx:value="T形速度曲线" />
+													</value>
+												</ComboBox>
+												<ComboBox prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+													<items>
+														<FXCollections fx:factory="observableArrayList">
+															<String fx:value="T形速度曲线" />
+															<String fx:value="S形速度曲线" />
+														</FXCollections>
+													</items>
+													<value>
+														<String fx:value="T形速度曲线" />
+													</value>
+												</ComboBox>
+												<ComboBox prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+													<items>
+														<FXCollections fx:factory="observableArrayList">
+															<String fx:value="T形速度曲线" />
+															<String fx:value="S形速度曲线" />
+														</FXCollections>
+													</items>
+													<value>
+														<String fx:value="T形速度曲线" />
+													</value>
+												</ComboBox>
+                                    <Button mnemonicParsing="false" text="保存" GridPane.columnIndex="4" GridPane.rowIndex="12" />
+											</children>
+										</GridPane>
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab text="运动方式">
+							<content>
+								<Pane prefHeight="200.0" prefWidth="200.0">
+									<children>
+										<GridPane layoutX="-3.0" prefHeight="467.0" prefWidth="817.0">
+											<columnConstraints>
+												<ColumnConstraints hgrow="SOMETIMES" maxWidth="129.0" minWidth="10.0" prefWidth="43.0" />
+												<ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="110.0" />
+												<ColumnConstraints hgrow="SOMETIMES" maxWidth="317.0" minWidth="10.0" prefWidth="119.0" />
+												<ColumnConstraints hgrow="SOMETIMES" maxWidth="361.0" minWidth="10.0" prefWidth="124.0" />
+												<ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="248.0" minWidth="10.0" prefWidth="141.0" />
+												<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="266.0" minWidth="10.0" prefWidth="260.0" />
+											</columnConstraints>
+											<rowConstraints>
+												<RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+												<RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+												<RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+												<RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+												<RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+												<RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="12.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+											</rowConstraints>
+											<children>
+												<Button mnemonicParsing="false" text="W停止" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+												<Button mnemonicParsing="false" onAction="#actionFactory" prefHeight="25.0" prefWidth="130.0" text="actionFactory" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+												<Label text="运动方式：" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+												<RadioButton mnemonicParsing="false" text="定长运动" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+												<RadioButton mnemonicParsing="false" text="连续运动" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+												<RadioButton mnemonicParsing="false" text="回原点运动" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+												<Button mnemonicParsing="false" text="执行" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+												<Button mnemonicParsing="false" prefHeight="23.0" prefWidth="130.0" text="goELPlus" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+												<Label text="固定模式：" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+												<Label text="多轴定点运动：" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+												<Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+												<TextField GridPane.columnIndex="2" GridPane.rowIndex="7" />
+												<TextField GridPane.columnIndex="2" GridPane.rowIndex="8" />
+												<TextField GridPane.columnIndex="2" GridPane.rowIndex="9" />
+												<TextField GridPane.columnIndex="2" GridPane.rowIndex="10" />
+												<Label text="X" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+												<Label text="Y" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+												<Label text="Z" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+												<Label text="W" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+												<Button mnemonicParsing="false" text="执行" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+												<TextField GridPane.columnIndex="3" GridPane.rowIndex="2" />
+													<ComboBox prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+														<items>
+															<FXCollections fx:factory="observableArrayList">
+																<String fx:value="正向" />
+																<String fx:value="负向" />
+															</FXCollections>
+														</items>
+														<value>
+															<String fx:value="正向" />
+														</value>
+													</ComboBox>
+													<ComboBox prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+														<items>
+															<FXCollections fx:factory="observableArrayList">
+																<String fx:value="正向" />
+																<String fx:value="负向" />
+															</FXCollections>
+														</items>
+														<value>
+															<String fx:value="正向" />
+														</value>
+													</ComboBox>
+													<ComboBox prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+														<items>
+															<FXCollections fx:factory="observableArrayList">
+																<String fx:value="正向" />
+																<String fx:value="负向" />
+															</FXCollections>
+														</items>
+														<value>
+															<String fx:value="正向" />
+														</value>
+													</ComboBox>
+													<ComboBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+														<items>
+															<FXCollections fx:factory="observableArrayList">
+																<String fx:value="高速" />
+																<String fx:value="低速" />
+															</FXCollections>
+														</items>
+														<value>
+															<String fx:value="高速" />
+														</value>
+													</ComboBox>
+                                    <Button mnemonicParsing="false" text="X停止" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                                    <Button mnemonicParsing="false" text="Y停止" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                                    <Button mnemonicParsing="false" text="Z停止" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                                    <Button mnemonicParsing="false" text="所有轴停止" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+											</children>
+										</GridPane>
+									</children>
+								</Pane>
+							</content>
+						</Tab>
+					</tabs>
+				</TabPane>
+			</children>
+		</Pane>
+		<Label layoutX="39.0" layoutY="527.0" prefHeight="73.0" prefWidth="80.0" text="运动状态：" />
+		<Label fx:id="statusInfo" layoutX="109.0" layoutY="527.0" prefHeight="73.0" prefWidth="482.0" text="未初始化" />
 	</children>
 </AnchorPane>
