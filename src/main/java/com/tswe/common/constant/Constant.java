@@ -46,12 +46,20 @@ public class Constant {
 	//EL模式
 	public static final int ELMODE = 0;
 	//轴繁忙，则bussnessFlag置0
-	public static final int ISBUSYNESS = 0;
+	public static final boolean ISBUSYNESS = true;
 	//轴空闲，则bussnessFlag置1
-	public static final int NOBUSYNESS = 1;
-	
-	
+	public static final boolean NOBUSYNESS = false;
+	//轴在运动  则返回 RUNNING
+	public static final boolean RUNNING = true;
+	//轴在停止中 则返回 STOPING
+	public static final boolean STOPING = false;
+	public static final boolean YES = true;
+	public static final boolean NO = false;
 	//速度曲线类型
+	//T形
 	public static final int TV = 0;
+	//S形
 	public static final int SV = 1;
+	//恒定
+	public static final int CV = 2;
 }

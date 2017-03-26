@@ -183,12 +183,10 @@ public class ControlBoard {
 	 * @return void
 	 * @version 0.1
 	 */
-	public void motionConfigEMGPIN(int enable, int emg_logic){
+	public void configEMGPIN(int enable, int emg_logic){
 		JNAInvokeDll.motionDrvDll.motion_config_EMG_PIN(this.controlBoardNum, enable, emg_logic);
 	}
 
-	
-	
 	public HashMap<Integer, Boolean> getInports() {
 		return Inports;
 	}

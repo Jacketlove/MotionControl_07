@@ -1,11 +1,14 @@
 package com.tswe.autotest.service;
 
 import java.util.ArrayList;
+
+import org.aspectj.apache.bcel.generic.ReturnaddressType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import com.tswe.autotest.model.ControlBoard;
+import com.tswe.common.util.CommonUtil;
 import com.tswe.common.util.JNAInvokeDll;
 
 
@@ -59,15 +62,14 @@ public class InitControlBoardService {
 		return null;
 	}
 
-	public static String getConnectType() {
-		return connectType;
-	}
-
-	public static void setConnectType(String connectType) {
-		InitControlBoardService.connectType = connectType;
-	}
-	
-	public void connectControlBoardClose(){
+	public boolean connectControlBoardClose(){
 		JNAInvokeDll.motionDrvDll.motion_board_close();
+		if(CommonUtil.dllReturn("motion_board_close")){
+			logger.info("motion_board_close return: true");
+			return true;
+		}else {
+			logger.info("motion_board_close return: false");
+			return false;
+		}
 	}
 }

@@ -1,0 +1,638 @@
+[2017-03-24 18:08:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:08:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:08:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:08:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:08:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:08:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:08:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:08:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:08:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:08:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:08:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:08:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:08:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:08:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:08:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:08:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:08:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 18:08:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 18:08:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 18:08:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 18:08:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:874) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 18:28:05 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:06:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:15:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:15:23 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:16:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:18:33 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:24:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:25:23 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:37) - connectType：Serial Port, controlBoardNum:0,info:connectType error
+[2017-03-24 22:25:36 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:37) - connectType：Serial Port, controlBoardNum:0,info:connectType error
+[2017-03-24 22:25:47 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:37) - connectType：Serial Port, controlBoardNum:0,info:connectType error
+[2017-03-24 22:25:49 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:37) - connectType：Serial Port, controlBoardNum:0,info:connectType error
+[2017-03-24 22:26:20 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:37) - connectType：Serial Port, controlBoardNum:0,info:connectType error
+[2017-03-24 22:29:00 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:37) - connectType：Serial Port, controlBoardNum:0,info:connectType error
+[2017-03-24 22:29:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:37) - connectType：Serial Port, controlBoardNum:0,info:connectType error
+[2017-03-24 22:30:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:37) - connectType：Serial Port, controlBoardNum:0,info:connectType error
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:33:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:33:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:42 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:33:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:884) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:33:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 22:33:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:33:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:33:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:33:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:36:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:36:22 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 22:36:22 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 22:36:22 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 22:36:22 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 22:36:22 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 22:36:40 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_HOME_pin_logic success
+
+[2017-03-24 22:36:40 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_HOME_pin_logic success
+
+[2017-03-24 22:36:40 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_HOME_pin_logic success
+
+[2017-03-24 22:36:40 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_HOME_pin_logic success
+
+[2017-03-24 22:36:53 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_vmove success
+
+[2017-03-24 22:36:53 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_vmove success
+
+[2017-03-24 22:36:53 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_vmove success
+
+[2017-03-24 22:36:53 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_vmove success
+
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:42:21 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:45:01 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:45:20 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:46:28 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:46:28 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:885) - Axis初始化失败，设置脉冲模式失败！
+[2017-03-24 22:47:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:48:11 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:48:26 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:49:15 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:49:53 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:49:53 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:49:53 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:49:53 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:49:53 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:49:53 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:49:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:49:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:49:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 22:49:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:49:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:49:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:49:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:49:57 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 22:49:57 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 22:50:35 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_check_done success
+
+[2017-03-24 22:50:35 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_check_done success
+
+[2017-03-24 22:50:35 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_check_done success
+
+[2017-03-24 22:50:35 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_check_done success
+
+[2017-03-24 22:50:35 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_check_done success
+
+[2017-03-24 22:50:35 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_check_done success
+
+[2017-03-24 22:50:35 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_check_done success
+
+[2017-03-24 22:50:35 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_check_done success
+
+[2017-03-24 22:50:35 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_check_done success
+
+[2017-03-24 22:50:35 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_check_done success
+
+[2017-03-24 22:50:35 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_check_done success
+
+[2017-03-24 22:50:35 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_check_done success
+
+[2017-03-24 22:52:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:52:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:52:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:52:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:52:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:52:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:52:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:52:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:52:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 22:52:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:52:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:52:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:52:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:52:58 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 22:52:59 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 22:54:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:54:27 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:54:28 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:54:28 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:54:28 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:54:28 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:54:28 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:54:28 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:54:28 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 22:54:28 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:54:28 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:54:28 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:54:28 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:54:30 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 22:54:30 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 22:56:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:56:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:56:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:56:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:56:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:56:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:56:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:56:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:56:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 22:56:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:56:55 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:56:55 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:56:55 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:57:08 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 22:57:08 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 22:58:51 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:58:51 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:58:51 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:58:52 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:58:52 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:58:52 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:58:52 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:58:52 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 22:58:52 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 22:58:52 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:58:52 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:58:52 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:58:52 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 22:59:05 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 22:59:36 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 23:00:58 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:00:58 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:00:58 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:00:58 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:00:58 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:00:58 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:00:58 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:00:58 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:00:58 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 23:00:58 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 23:00:58 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 23:00:58 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 23:00:58 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 23:01:04 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 23:01:04 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 23:01:30 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:01:30 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:01:30 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:01:30 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:01:30 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:01:30 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:01:30 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:01:30 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-24 23:01:30 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:33) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-24 23:01:30 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 23:01:30 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 23:01:30 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 23:01:30 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-24 23:02:01 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-24 23:02:07 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+

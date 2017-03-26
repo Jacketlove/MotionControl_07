@@ -56,6 +56,7 @@
 														<RadioButton mnemonicParsing="false" text="PCI Port" toggleGroup="$connectPortGroup" GridPane.columnIndex="1" GridPane.rowIndex="2" />
 														<Label text="连接方式：" GridPane.rowIndex="1" />
 														<Button mnemonicParsing="false" onAction="#connectButton" text="连接" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#disConnectButton" text="断开" GridPane.columnIndex="2" GridPane.rowIndex="2" />
 													</children>
 												</GridPane>
 											</children>
@@ -106,37 +107,37 @@
 												<Label text="减速时间Tdec" GridPane.rowIndex="5" />
 												<Label text="Tsacc" GridPane.rowIndex="6" />
 												<Label text="Tsdec" GridPane.rowIndex="7" />
-												<TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
-												<TextField GridPane.columnIndex="2" GridPane.rowIndex="2" />
-												<TextField GridPane.columnIndex="3" GridPane.rowIndex="2" />
-												<TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
-												<TextField GridPane.columnIndex="2" GridPane.rowIndex="3" />
-												<TextField GridPane.columnIndex="3" GridPane.rowIndex="3" />
-												<TextField GridPane.columnIndex="4" GridPane.rowIndex="3" />
-												<TextField GridPane.columnIndex="4" GridPane.rowIndex="2" />
-												<TextField GridPane.columnIndex="5" GridPane.rowIndex="2" />
-												<TextField GridPane.columnIndex="5" GridPane.rowIndex="3" />
-												<TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
-												<TextField GridPane.columnIndex="2" GridPane.rowIndex="4" />
-												<TextField GridPane.columnIndex="3" GridPane.rowIndex="4" />
-												<TextField GridPane.columnIndex="4" GridPane.rowIndex="4" />
-												<TextField GridPane.columnIndex="5" GridPane.rowIndex="4" />
-												<TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
-												<TextField GridPane.columnIndex="2" GridPane.rowIndex="5" />
-												<TextField GridPane.columnIndex="3" GridPane.rowIndex="5" />
-												<TextField GridPane.columnIndex="4" GridPane.rowIndex="5" />
-												<TextField GridPane.columnIndex="5" GridPane.rowIndex="5" />
-												<TextField GridPane.columnIndex="1" GridPane.rowIndex="6" />
-												<TextField GridPane.columnIndex="2" GridPane.rowIndex="6" />
-												<TextField GridPane.columnIndex="3" GridPane.rowIndex="6" />
-												<TextField GridPane.columnIndex="4" GridPane.rowIndex="6" />
-												<TextField GridPane.columnIndex="5" GridPane.rowIndex="6" />
-												<TextField GridPane.columnIndex="1" GridPane.rowIndex="7" />
-												<TextField GridPane.columnIndex="2" GridPane.rowIndex="7" />
-												<TextField GridPane.columnIndex="3" GridPane.rowIndex="7" />
-												<TextField GridPane.columnIndex="4" GridPane.rowIndex="7" />
-												<TextField GridPane.columnIndex="5" GridPane.rowIndex="7" />
-												<ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+												<TextField alignment="CENTER" text="1000" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="xMinVel" />
+												<TextField fx:id="yMinVel" alignment="CENTER" text="1000" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+												<TextField fx:id="zMinVel" alignment="CENTER" text="1000" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+												<TextField alignment="CENTER" text="5000" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="xMaxVel" />
+												<TextField fx:id="yMaxVel" alignment="CENTER" text="5000" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+												<TextField fx:id="zMaxVel" alignment="CENTER" text="5000" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+												<TextField fx:id="wMaxVel" alignment="CENTER" text="5000" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+												<TextField fx:id="wMinVel" alignment="CENTER" text="1000" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+												<TextField fx:id="tMinVel" alignment="CENTER" text="1000" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+												<TextField fx:id="tMaxVel" alignment="CENTER" text="5000" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+												<TextField alignment="CENTER" text="0.5" GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="xTacc" />
+												<TextField fx:id="yTacc" alignment="CENTER" text="0.5" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+												<TextField fx:id="zTacc" alignment="CENTER" text="0.5" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+												<TextField fx:id="wTacc" alignment="CENTER" text="0.5" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+												<TextField fx:id="tTacc" alignment="CENTER" text="0.5" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+												<TextField alignment="CENTER" text="0.5" GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="xTdec" />
+												<TextField fx:id="yTdec" alignment="CENTER" text="0.5" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+												<TextField fx:id="zTdec" alignment="CENTER" text="0.5" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+												<TextField fx:id="wTdec" alignment="CENTER" text="0.5" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+												<TextField fx:id="tTdec" alignment="CENTER" text="0.5" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+												<TextField alignment="CENTER" text="0.1" GridPane.columnIndex="1" GridPane.rowIndex="6" fx:id="xTsacc" />
+												<TextField fx:id="yTsacc" alignment="CENTER" text="0.1" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+												<TextField fx:id="zTsacc" alignment="CENTER" text="0.1" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+												<TextField fx:id="wTsacc" alignment="CENTER" text="0.1" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+												<TextField fx:id="tTsacc" alignment="CENTER" text="0.1" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+												<TextField alignment="CENTER" text="0.1" GridPane.columnIndex="1" GridPane.rowIndex="7" fx:id="xTsdec" />
+												<TextField fx:id="yTsdec" alignment="CENTER" text="0.1" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+												<TextField fx:id="zTsdec" alignment="CENTER" text="0.1" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+												<TextField fx:id="wTsdec" alignment="CENTER" text="0.1" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+												<TextField fx:id="tTsdec" alignment="CENTER" text="0.1" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+												<ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="xVelType">
 													<items>
 														<FXCollections fx:factory="observableArrayList">
 															<String fx:value="T形速度曲线" />
@@ -147,7 +148,7 @@
 														<String fx:value="T形速度曲线" />
 													</value>
 												</ComboBox>
-												<ComboBox prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+												<ComboBox fx:id="yVelType" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
 													<items>
 														<FXCollections fx:factory="observableArrayList">
 															<String fx:value="T形速度曲线" />
@@ -158,7 +159,7 @@
 														<String fx:value="T形速度曲线" />
 													</value>
 												</ComboBox>
-												<ComboBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+												<ComboBox fx:id="zVelType" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
 													<items>
 														<FXCollections fx:factory="observableArrayList">
 															<String fx:value="T形速度曲线" />
@@ -169,7 +170,7 @@
 														<String fx:value="T形速度曲线" />
 													</value>
 												</ComboBox>
-												<ComboBox prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+												<ComboBox fx:id="wVelType" prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
 													<items>
 														<FXCollections fx:factory="observableArrayList">
 															<String fx:value="T形速度曲线" />
@@ -180,7 +181,7 @@
 														<String fx:value="T形速度曲线" />
 													</value>
 												</ComboBox>
-												<ComboBox prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+												<ComboBox fx:id="tVelType" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
 													<items>
 														<FXCollections fx:factory="observableArrayList">
 															<String fx:value="T形速度曲线" />
@@ -191,7 +192,12 @@
 														<String fx:value="T形速度曲线" />
 													</value>
 												</ComboBox>
-                                    <Button mnemonicParsing="false" text="保存" GridPane.columnIndex="4" GridPane.rowIndex="12" />
+                                    <Button mnemonicParsing="false" onAction="#allAxisSetVel" text="保存" GridPane.columnIndex="4" GridPane.rowIndex="11" />
+                                    <Button mnemonicParsing="false" onAction="#xAxisSetVel" text="保存X轴" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <Button mnemonicParsing="false" onAction="#yAxisSetVel" text="保存Y轴" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                    <Button mnemonicParsing="false" onAction="#zAxisSetVel" text="保存Z轴" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                                    <Button mnemonicParsing="false" onAction="#wAxisSetVel" text="保存W轴" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                                    <Button mnemonicParsing="false" onAction="#tAxisSetVel" text="保存T轴" GridPane.columnIndex="5" GridPane.rowIndex="8" />
 											</children>
 										</GridPane>
 									</children>
@@ -205,11 +211,14 @@
 										<GridPane layoutX="-3.0" prefHeight="467.0" prefWidth="817.0">
 											<columnConstraints>
 												<ColumnConstraints hgrow="SOMETIMES" maxWidth="129.0" minWidth="10.0" prefWidth="43.0" />
-												<ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="110.0" />
-												<ColumnConstraints hgrow="SOMETIMES" maxWidth="317.0" minWidth="10.0" prefWidth="119.0" />
-												<ColumnConstraints hgrow="SOMETIMES" maxWidth="361.0" minWidth="10.0" prefWidth="124.0" />
-												<ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="248.0" minWidth="10.0" prefWidth="141.0" />
-												<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="266.0" minWidth="10.0" prefWidth="260.0" />
+												<ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="103.0" />
+												<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="317.0" minWidth="10.0" prefWidth="98.0" />
+												<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="361.0" minWidth="10.0" prefWidth="86.0" />
+												<ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="248.0" minWidth="10.0" prefWidth="90.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="109.0" />
+												<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="110.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="266.0" minWidth="10.0" prefWidth="99.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="266.0" minWidth="10.0" prefWidth="107.0" />
 											</columnConstraints>
 											<rowConstraints>
 												<RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -225,15 +234,9 @@
 												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
 											</rowConstraints>
 											<children>
-												<Button mnemonicParsing="false" text="W停止" GridPane.columnIndex="4" GridPane.rowIndex="10" />
-												<Button mnemonicParsing="false" onAction="#actionFactory" prefHeight="25.0" prefWidth="130.0" text="actionFactory" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-												<Label text="运动方式：" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-												<RadioButton mnemonicParsing="false" text="定长运动" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-												<RadioButton mnemonicParsing="false" text="连续运动" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-												<RadioButton mnemonicParsing="false" text="回原点运动" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-												<Button mnemonicParsing="false" text="执行" GridPane.columnIndex="3" GridPane.rowIndex="10" />
-												<Button mnemonicParsing="false" prefHeight="23.0" prefWidth="130.0" text="goELPlus" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-												<Label text="固定模式：" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+												<Button mnemonicParsing="false" onAction="#wAxisStop" text="W停止" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+												<Button mnemonicParsing="false" onAction="#actionFactory" prefHeight="25.0" prefWidth="130.0" text="actionFactory" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+												<Button mnemonicParsing="false" text="执行" GridPane.columnIndex="4" GridPane.rowIndex="6" />
 												<Label text="多轴定点运动：" GridPane.columnIndex="1" GridPane.rowIndex="6" />
 												<Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
 												<TextField GridPane.columnIndex="2" GridPane.rowIndex="7" />
@@ -244,42 +247,7 @@
 												<Label text="Y" GridPane.columnIndex="1" GridPane.rowIndex="8" />
 												<Label text="Z" GridPane.columnIndex="1" GridPane.rowIndex="9" />
 												<Label text="W" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-												<Button mnemonicParsing="false" text="执行" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-												<TextField GridPane.columnIndex="3" GridPane.rowIndex="2" />
-													<ComboBox prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
-														<items>
-															<FXCollections fx:factory="observableArrayList">
-																<String fx:value="正向" />
-																<String fx:value="负向" />
-															</FXCollections>
-														</items>
-														<value>
-															<String fx:value="正向" />
-														</value>
-													</ComboBox>
-													<ComboBox prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
-														<items>
-															<FXCollections fx:factory="observableArrayList">
-																<String fx:value="正向" />
-																<String fx:value="负向" />
-															</FXCollections>
-														</items>
-														<value>
-															<String fx:value="正向" />
-														</value>
-													</ComboBox>
-													<ComboBox prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
-														<items>
-															<FXCollections fx:factory="observableArrayList">
-																<String fx:value="正向" />
-																<String fx:value="负向" />
-															</FXCollections>
-														</items>
-														<value>
-															<String fx:value="正向" />
-														</value>
-													</ComboBox>
-													<ComboBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+													<ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
 														<items>
 															<FXCollections fx:factory="observableArrayList">
 																<String fx:value="高速" />
@@ -290,10 +258,57 @@
 															<String fx:value="高速" />
 														</value>
 													</ComboBox>
-                                    <Button mnemonicParsing="false" text="X停止" GridPane.columnIndex="4" GridPane.rowIndex="7" />
-                                    <Button mnemonicParsing="false" text="Y停止" GridPane.columnIndex="4" GridPane.rowIndex="8" />
-                                    <Button mnemonicParsing="false" text="Z停止" GridPane.columnIndex="4" GridPane.rowIndex="9" />
-                                    <Button mnemonicParsing="false" text="所有轴停止" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+                                    <Button mnemonicParsing="false" onAction="#xAxisStop" text="X停止" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                                    <Button mnemonicParsing="false" onAction="#yAxisStop" text="Y停止" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                                    <Button mnemonicParsing="false" onAction="#zAxisStop" text="Z停止" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                                    <Button mnemonicParsing="false" onAction="#allAxisStop" text="所有轴停止" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                                    <TextField GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                                    <TextField GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                                    <TextField GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                                    <TextField GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                                    <Button mnemonicParsing="false" onAction="#xAxisGoHome" text="X轴回原点" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <Button mnemonicParsing="false" onAction="#yAxisGoHome" text="Y轴回原点" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <Button mnemonicParsing="false" onAction="#zAxisGoHome" text="Z轴回原点" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <Button mnemonicParsing="false" onAction="#wAxisGoHome" text="W轴回原定" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <ComboBox prefWidth="150.0" value="高速" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <items>
+                                          <FXCollections fx:factory="observableArrayList">
+                                             <String fx:value="高速" />
+                                             <String fx:value="低速" />
+                                          </FXCollections>
+                                       </items>
+                                    </ComboBox>
+                                    <ComboBox prefWidth="150.0" value="高速" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <items>
+                                          <FXCollections fx:factory="observableArrayList">
+                                             <String fx:value="高速" />
+                                             <String fx:value="低速" />
+                                          </FXCollections>
+                                       </items>
+                                    </ComboBox>
+                                    <ComboBox prefWidth="150.0" value="高速" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                       <items>
+                                          <FXCollections fx:factory="observableArrayList">
+                                             <String fx:value="高速" />
+                                             <String fx:value="低速" />
+                                          </FXCollections>
+                                       </items>
+                                    </ComboBox>
+                                    <Button mnemonicParsing="false" text="正" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                    <Button mnemonicParsing="false" onAction="#allAxiaGoHome" text="XYZW回原点" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <Button mnemonicParsing="false" text="T停止" GridPane.columnIndex="6" />
+                                    <Button mnemonicParsing="false" text="正" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                                    <Button mnemonicParsing="false" text="正" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                                    <Button mnemonicParsing="false" text="正" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                                    <Button mnemonicParsing="false" text="负" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                                    <Button mnemonicParsing="false" text="负" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                                    <Button mnemonicParsing="false" text="负" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                                    <Button mnemonicParsing="false" text="负" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                                    <Button mnemonicParsing="false" onAction="#xAxisGoELPlus" text="X轴到E+" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <Button mnemonicParsing="false" onAction="#yAxisGoELPlus" text="Y轴到E+" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <Button mnemonicParsing="false" onAction="#zAxisGoELPlus" text="Z轴到E+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                    <Button mnemonicParsing="false" onAction="#wAxisGoELPlus" text="W轴到E+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                    <Button mnemonicParsing="false" onAction="#allAxisGoELPlus" text="XYW到E+" GridPane.columnIndex="3" GridPane.rowIndex="5" />
 											</children>
 										</GridPane>
 									</children>
