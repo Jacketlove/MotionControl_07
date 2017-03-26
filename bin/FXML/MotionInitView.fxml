@@ -309,6 +309,7 @@
                                     <Button mnemonicParsing="false" onAction="#zAxisGoELPlus" text="Z轴到E+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
                                     <Button mnemonicParsing="false" onAction="#wAxisGoELPlus" text="W轴到E+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
                                     <Button mnemonicParsing="false" onAction="#allAxisGoELPlus" text="XYW到E+" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                    <Button mnemonicParsing="false" onAction="#powerOn" text="powerOn" GridPane.columnIndex="5" GridPane.rowIndex="8" />
 											</children>
 										</GridPane>
 									</children>

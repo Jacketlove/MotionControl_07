@@ -2,11 +2,9 @@ package com.tswe.autotest.service;
 
 import java.util.ArrayList;
 
-import org.aspectj.apache.bcel.generic.ReturnaddressType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-
 import com.tswe.autotest.model.ControlBoard;
 import com.tswe.common.util.CommonUtil;
 import com.tswe.common.util.JNAInvokeDll;
@@ -15,6 +13,7 @@ import com.tswe.common.util.JNAInvokeDll;
 @Component
 public class InitControlBoardService {
 	//连接方式
+	@SuppressWarnings("unused")
 	private static String connectType;
 	private Logger logger = LoggerFactory.getLogger(InitControlBoardService.class);
  

@@ -4,8 +4,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.SingleColumnRowMapper;
-
 import com.tswe.autotest.model.Axis;
 import com.tswe.autotest.model.ControlBoard;
 import com.tswe.autotest.service.InitControlBoardService;
@@ -108,8 +106,6 @@ public class MotionInitController implements Initializable{
 	
 	private MotionControlThread motionControlThread;
 	
-	
-	
 	@FXML
     private void connectButton(){
 		//提示框类容
@@ -135,10 +131,6 @@ public class MotionInitController implements Initializable{
 			dialogMsg += "连接方式:"+connectType+"\n";
 			dialogMsg += "连接控制板量?"+controlBoards.size();
 			motionControlThread = new MotionControlThread(controlBoards.get(0));
-			//配置EL模式
-			for(Axis axis: controlBoards.get(0).getAxias()){
-				axis.configELMode(Constant.ELMODE);
-			}
 		}
 		DialogsUtil.show(dialogType, dialogTitle, dialogMsg);
 	}
@@ -197,9 +189,9 @@ public class MotionInitController implements Initializable{
 	@FXML
 	public void allAxisGoELPlus(){
 		//判断是否有资源执行此操作
-		if(controlBoards.get(0).getAxias()[Constant.XAXIA].isBusynessFlag()||
-				controlBoards.get(0).getAxias()[Constant.YAXIA].isBusynessFlag()||
-				controlBoards.get(0).getAxias()[Constant.ZAXIA].isBusynessFlag())
+		if(controlBoards.get(0).getAxias()[Constant.XAXIA].isBusynessFlag() == Constant.ISBUSYNESS||
+				controlBoards.get(0).getAxias()[Constant.YAXIA].isBusynessFlag() == Constant.ISBUSYNESS||
+				controlBoards.get(0).getAxias()[Constant.WAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
 			return ;
 		motionControlThread.setCmd("AllAxisGoELPlus");
 		new Thread(motionControlThread).start();
@@ -451,7 +443,23 @@ public class MotionInitController implements Initializable{
 	}
 	
 	/*********************************************************************************
-	 ********************************** 停止  ******************************************
+	 ********************************** powerOn **************************************
+	 *********************************************************************************/
+	@FXML
+	public void powerOn(){
+		//判断是否有资源执行此操作
+		if(controlBoards.get(0).getAxias()[Constant.XAXIA].isBusynessFlag()||
+				controlBoards.get(0).getAxias()[Constant.YAXIA].isBusynessFlag()||
+				controlBoards.get(0).getAxias()[Constant.ZAXIA].isBusynessFlag()||
+				controlBoards.get(0).getAxias()[Constant.WAXIA].isBusynessFlag()||
+				controlBoards.get(0).getAxias()[Constant.TAXIA].isBusynessFlag())
+			return ;
+		motionControlThread.setCmd("powerOn");
+		new Thread(motionControlThread).start();
+	}
+	
+	/*********************************************************************************
+	 ********************************** stop  ****************************************
 	 *********************************************************************************/
 	public void singleAxisStop(Axis axis){
 		if(axis.isBusynessFlag() == Constant.ISBUSYNESS){
@@ -490,4 +498,6 @@ public class MotionInitController implements Initializable{
 		singleAxisStop(controlBoards.get(0).getAxias()[Constant.WAXIA]);
 		singleAxisStop(controlBoards.get(0).getAxias()[Constant.TAXIA]);
 	}
+	
+	
 }

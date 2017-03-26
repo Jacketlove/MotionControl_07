@@ -10,14 +10,17 @@ public class MotionControlThread implements Runnable{
 	String cmd;
 	Axis axis;
 	
+	@SuppressWarnings("deprecation")
 	@Override
 	public void run() {
+		boolean stopFlag = false;
 		switch (cmd) {
+		
+		
 		//单轴回原点
 		case "singleAxiaGoHome":
 			axis.getAxisResource();
-			axis.goHome(Constant.ORGVALIDLOGIC,
-					Constant.REVERSEGOHOME, Constant.HIGHV);
+			axis.homeMove(Constant.REVERSEGOHOME, Constant.HIGHV);
 			axis.releaseAxisResource();
 			break;
 		
@@ -30,20 +33,18 @@ public class MotionControlThread implements Runnable{
 			controlBoard.getAxias()[Constant.WAXIA].getAxisResource();
 			//Z轴回原点
 			controlBoard.getAxias()[Constant.ZAXIA].
-			goHome(Constant.ORGVALIDLOGIC, Constant.REVERSEGOHOME, Constant.HIGHV);
+			homeMove(Constant.REVERSEGOHOME, Constant.HIGHV);
 			//等待Z轴停止
 			controlBoard.getAxias()[Constant.ZAXIA].waitAxisStop();
-			
 			//X轴回原点
 			controlBoard.getAxias()[Constant.XAXIA].
-			goHome(Constant.ORGVALIDLOGIC, Constant.REVERSEGOHOME, Constant.HIGHV);
+			homeMove(Constant.REVERSEGOHOME, Constant.HIGHV);
 			//Y轴回原点
 			controlBoard.getAxias()[Constant.YAXIA].
-			goHome(Constant.ORGVALIDLOGIC, Constant.REVERSEGOHOME, Constant.HIGHV);
+			homeMove(Constant.REVERSEGOHOME, Constant.HIGHV);
 			//W轴回原点
 			controlBoard.getAxias()[Constant.WAXIA].
-			goHome(Constant.ORGVALIDLOGIC, Constant.REVERSEGOHOME, Constant.HIGHV);
-			
+			homeMove(Constant.REVERSEGOHOME, Constant.HIGHV);
 			//等待XYW停止
 			controlBoard.getAxias()[Constant.XAXIA].waitAxisStop();
 			controlBoard.getAxias()[Constant.YAXIA].waitAxisStop();
@@ -55,11 +56,13 @@ public class MotionControlThread implements Runnable{
 			controlBoard.getAxias()[Constant.WAXIA].releaseAxisResource();
 			break;
 			
+		//单轴到EL+
 		case "singleAixsGoELPlus":
 			axis.getAxisResource();
 			axis.move(1);
 			axis.releaseAxisResource();
 			break;
+			
 		//XYW到EL+
 		case "AllAxisGoELPlus":
 			//获取轴资源
@@ -69,7 +72,7 @@ public class MotionControlThread implements Runnable{
 			controlBoard.getAxias()[Constant.WAXIA].getAxisResource();
 			//Z轴回原点
 			controlBoard.getAxias()[Constant.ZAXIA].
-			goHome(Constant.ORGVALIDLOGIC, Constant.REVERSEGOHOME, Constant.HIGHV);
+			homeMove(Constant.REVERSEGOHOME, Constant.HIGHV);
 			//等待Z轴停止
 			controlBoard.getAxias()[Constant.ZAXIA].waitAxisStop();
 			//发送到EL命令
@@ -87,6 +90,38 @@ public class MotionControlThread implements Runnable{
 			controlBoard.getAxias()[Constant.WAXIA].releaseAxisResource();
 			break;	
 		
+		case "powerOn":
+			//所有轴回原点
+			cmd = "allAxiaGoHome";
+			run();
+			//回到原点后，设置原点位置为0
+			controlBoard.getAxias()[Constant.XAXIA].setPosition(0);
+			controlBoard.getAxias()[Constant.YAXIA].setPosition(0);
+			controlBoard.getAxias()[Constant.ZAXIA].setPosition(0);
+			controlBoard.getAxias()[Constant.WAXIA].setPosition(0);
+			controlBoard.getAxias()[Constant.XAXIA].writePosition(0);
+			controlBoard.getAxias()[Constant.YAXIA].writePosition(0);
+			controlBoard.getAxias()[Constant.ZAXIA].writePosition(0);
+			controlBoard.getAxias()[Constant.WAXIA].writePosition(0);
+			//所有轴移动到EL+
+			cmd = "AllAxisGoELPlus";
+			run();
+			//轴移动到EL+后，读取位置信息，此位置信息即为轴长
+			controlBoard.getAxias()[Constant.XAXIA].setLength(
+					controlBoard.getAxias()[Constant.XAXIA].readPosition());
+			controlBoard.getAxias()[Constant.YAXIA].setLength(
+					controlBoard.getAxias()[Constant.YAXIA].readPosition());
+			controlBoard.getAxias()[Constant.ZAXIA].setLength(
+					controlBoard.getAxias()[Constant.ZAXIA].readPosition());
+			controlBoard.getAxias()[Constant.WAXIA].setLength(
+					controlBoard.getAxias()[Constant.WAXIA].readPosition());
+			
+			System.out.println(controlBoard.getAxias()[Constant.XAXIA].getLength());
+			System.out.println(controlBoard.getAxias()[Constant.YAXIA].getLength());
+			System.out.println(controlBoard.getAxias()[Constant.ZAXIA].getLength());
+			System.out.println(controlBoard.getAxias()[Constant.WAXIA].getLength());
+			break;
+			
 		//设置单轴速度
 		case "singleAxisSetVel":
 			//获取轴资源
@@ -178,9 +213,13 @@ public class MotionControlThread implements Runnable{
 			if(axis.isToStop() == Constant.YES){
 				axis.stop();
 				axis.setToStop(Constant.NO);
+				stopFlag = true;
 			}
 		}
-		
+		//检测到停止，终止进程
+		if(stopFlag){
+			Thread.currentThread().stop();
+		}
 	}
 
 	public MotionControlThread(ControlBoard controlBoard) {
@@ -633,5 +672,4 @@ public class MotionControlThread implements Runnable{
 	public void settVelType(int tVelType) {
 		this.tVelType = tVelType;
 	}
-
 }

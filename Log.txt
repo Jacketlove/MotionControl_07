@@ -4,31 +4,10 @@ OPEN COM1 Success
 VERSION C3850 V16.0911.9
 Comm Init Success, VERSION V5.05
 
-ASSERT[416788](0) Failed in file comm.c:1138
-[111,112,3]
-ASSERT[47032326](0) Failed in file serial.c:630
+ASSERT[414681](0) Failed in file comm.c:1138
+[110,111,3]
+ASSERT[10201318](0) Failed in file serial.c:630
 
-ASSERT[47032333](0) Failed in file serial.c:750
+ASSERT[10201325](0) Failed in file serial.c:750
 
-Rerr::[0##366##]
-ASSERT[76294151](0) Failed in file serial.c:630
-
-ASSERT[76294158](0) Failed in file serial.c:750
-
-Rerr::[0##366##]
-ASSERT[431588111](0) Failed in file serial.c:630
-
-ASSERT[431588119](0) Failed in file serial.c:750
-
-Rerr::[0##ÿÿ366##]
-ASSERT[443842585](0) Failed in file serial.c:630
-
-ASSERT[443842595](0) Failed in file serial.c:750
-
-Rerr::[0##366##]
-ASSERT[452848990](0) Failed in file serial.c:630
-
-ASSERT[452848999](0) Failed in file serial.c:750
-
-Rerr::[0##366##] >>>>>>>>>> Comm_Exit
-Comm Exit Success
+Rerr::[0##366##]

@@ -7,137 +7,53 @@ import com.tswe.common.constant.Constant;
 import com.tswe.common.util.CommonUtil;
 import com.tswe.common.util.JNAInvokeDll;
 
-public class Axis {
+public class Axis{
 	private Logger logger = LoggerFactory.getLogger(InitControlBoardService.class);
 	//轴号
 	private int axisNum;
-	private int elMode;
-	private int orgLogic;
-	private int filter;
+	
 	private int Dist;
 	private int posiMode;
+	//方向
 	private int dir;
-	private int mode;
-	private int EZCount;
-	private int homeMode;
+	//速度曲线类型 Constant.TV/ConstantSV
 	private int velMode;
 	//脉冲输出模式
 	private int pulseMode;
-	//相对于原点的位移
-	private int position;
-	//是否繁忙标志
-	private boolean busynessFlag;
-	//错误标志
-	private boolean errorFlag;
+	//EL模式
+	private int eLMode;
 	//速度曲线形状  T/S
 	private int velType;
 	//运动模式
 	private int MoveType;
-	//T形速度曲线  速度最小值
+	//相对于原点的位移
+	private int position;
+	//速度最小值
 	private double MinVel;
-	//T形速度曲线  速度最大值
+	//速度最大值
 	private double MaxVel;
-	//T形速度曲线  加速时间
+	//加速时间
 	private double Tacc;
-	//T形速度曲线  减速时间
+	//减速时间
 	private double Tdec;
 	private double Tsacc;
 	private double Tsdec;
-	private double CurrVel;
-	private String cmd;
+	//新的运行速度
+	private double currVel;
+	//原点信号有效电平 low/high
+	private int orgEnableLevel;
+	//是否过滤
+	private int orgFilter;
+	//回原点模式
+	private int orgMode;
 	//强制停止标志位
 	private boolean toStop;
-	
-	
-
-//	@SuppressWarnings("static-access")
-//	@Override
-//	public void run() {
-//		busynessFlag = Constant.ISBUSYNESS;
-//		if(null != cmd&& !"".equals(cmd)){
-//			switch (cmd) {
-//			case "configELMode":
-//				errorFlag = configELMode(elMode);
-//				busynessFlag = Constant.NOBUSYNESS;
-//				break;
-//			
-//			case "setHOMEPinLogic":
-//				errorFlag = setHOMEPinLogic(orgLogic, filter);
-//				busynessFlag = Constant.NOBUSYNESS;
-//				break;
-//			
-//			case "setProfile":
-//				errorFlag = setProfile(MinVel, MaxVel, Tacc, Tdec);
-//				busynessFlag = Constant.NOBUSYNESS;
-//				break;
-//				
-//			case "setStProfile":
-//				errorFlag = setStProfile(MinVel, MaxVel, Tacc, Tdec, Tsacc, Tsdec);
-//				busynessFlag = Constant.NOBUSYNESS;
-//				break;	
-//			
-//			case "changeSpeed":
-//				errorFlag = changeSpeed(CurrVel);
-//				busynessFlag = Constant.NOBUSYNESS;
-//				break;		
-//				
-//			case "tPMove":
-//				errorFlag = tPMove(Dist, posiMode);
-//				busynessFlag = Constant.ISBUSYNESS;
-//				break;
-//				
-//			case "sPMove":
-//				errorFlag = sPMove(Dist, posiMode);
-//				busynessFlag = Constant.ISBUSYNESS;
-//				break;
-//				
-//			case "tVMove":
-//				errorFlag = tVMove(dir);
-//				busynessFlag = Constant.ISBUSYNESS;
-//				break;
-//				
-//			case "sVMove":
-//				errorFlag = sVMove(dir);
-//				busynessFlag = Constant.ISBUSYNESS;
-//				break;
-//				
-//			case "config":
-//				errorFlag = configHomeMode(mode, EZCount);
-//				busynessFlag = Constant.NOBUSYNESS;
-//				break;
-//				
-//			case "homeMove":
-//				errorFlag = homeMove(homeMode, velMode);
-//				busynessFlag = Constant.ISBUSYNESS;
-//				break;
-//			default:
-//				errorFlag = false;
-//				busynessFlag = Constant.NOBUSYNESS;
-//				break;
-//			}
-//			//命令执行完毕，删除命令
-//			cmd = "";
-//			//判断轴是否停止，未停止则间隔1s判断一次是否停止
-//			if(busynessFlag == Constant.ISBUSYNESS){
-//				while(checkDone() == 0){
-//					try {
-//						Thread.currentThread().sleep(1000l);
-//					} catch (InterruptedException e) {
-//						// TODO Auto-generated catch block
-//						e.printStackTrace();
-//					}
-//				}
-//			}
-//			//轴停止，将标志位置为空闲状态
-//			busynessFlag = Constant.NOBUSYNESS;
-//			
-//			//如果命令列表不为空，重启一个线程继续执行
-//			if(null != cmd&& !"".equals(cmd)){
-//				Thread thread = new Thread(this);
-//				thread.start();
-//			}
-//		}
-//	}
+	//轴长度
+	private double length;
+	//是否繁忙标志
+	private boolean busynessFlag;
+	//错误标志
+	private boolean errorFlag;
 	
 	/********************************************************************************
 	 ******************************** 基本配置  ****************************************
@@ -572,8 +488,8 @@ public class Axis {
 	 * @return false 调用失败, true 调用成功
 	 * @version 0.1
 	 */
-	private boolean changeSpeed(double CurrVel) {
-		JNAInvokeDll.motionDrvDll.motion_change_speed(this.axisNum, CurrVel);
+	private boolean changeSpeed(double currVel) {
+		JNAInvokeDll.motionDrvDll.motion_change_speed(this.axisNum, currVel);
 		return CommonUtil.dllReturn(this, "motion_change_speed");
 	}
 	
@@ -773,28 +689,37 @@ public class Axis {
 	 /********************************************************************************
 	  ********************************** 位置设置与读取  **********************************
 	  ********************************************************************************/
-	 
+	
 	/**
-	* 读取指令脉冲位置
-	* 
-	* @param axisNum 轴号
-	* @return false 调用失败, true 调用成功
-	* @version 0.1
-	*/
-	public int getPosition(){
-		return JNAInvokeDll.motionDrvDll.motion_get_position(this.axisNum);
+	 * 读取指令脉冲位置
+	 * @param axis 轴号
+	 * @version 0.1
+	 */
+	public int readPosition(){
+		int tempPosition;
+		tempPosition = JNAInvokeDll.motionDrvDll.motion_get_position(this.axisNum);
+		if(CommonUtil.dllReturn(this, "motion_get_position")){
+			return this.position = tempPosition;
+		}else {
+			return Integer.MAX_VALUE;
+		}
 	}
-	 
+	
 	/**
-	* 设置指令脉冲位置
-	* @param axisNum 轴号
-	* @param current_position 位移
-	* 
-	* @version 0.1
-	*/
-	public void motion_set_position(int current_position){
-		JNAInvokeDll.motionDrvDll.motion_set_position( this.axisNum, current_position);
-	}
+	 * 设置指令脉冲位置
+	 * @param axis 轴号
+	 * @param current_position 位移
+	 * @version 0.1
+	 */
+	 public boolean writePosition(int currentPosition){
+		 JNAInvokeDll.motionDrvDll.motion_set_position(this.axisNum, currentPosition);
+		 if(CommonUtil.dllReturn(this, "motion_set_position")){
+			 this.position = currentPosition;
+			 return true;
+		 }else {
+			 return false;
+		}
+	 }
 	 
 	 /********************************************************************************
 	 ************************************* 回原点模式  ***********************************
@@ -808,8 +733,8 @@ public class Axis {
 	* @return false 调用失败, true 调用成功
 	* @version 0.1
 	*/
-	public boolean configHomeMode(){
-		JNAInvokeDll.motionDrvDll.motion_config_home_mode(this.axisNum, 0, 0);
+	public boolean configHomeMode(int mode){
+		JNAInvokeDll.motionDrvDll.motion_config_home_mode(this.axisNum, mode, 0);
 		return CommonUtil.dllReturn(this, "motion_config_home_mode");
 	}
 	 
@@ -826,20 +751,6 @@ public class Axis {
 		return CommonUtil.dllReturn(this, "motion_home_move");
 	}
 	
-	public String goHome(int org_logic, int mhome_mode, int vel_mode){
-		String msg = "";
-		//配置原点信号
-		if(!setHOMEPinLogic(org_logic, 1))
-			return msg+="setHOMEPinLogic<-goHome error!";
-		//设置回原点模式
-		if(!configHomeMode())
-			return msg+="configHomeMode<-goHome error!";
-		//原点运动开始 负方向回原点
-		if(!homeMove(mhome_mode, vel_mode))
-			return msg+="homeMove<-goHome error!";
-		return msg;
-	}
-	
 	/********************************************************************************
 	 ************************************轴资源操作*************************************
 	 ********************************************************************************/
@@ -848,17 +759,12 @@ public class Axis {
 	 * 所有最多只能有一个线程调用
 	 * 
 	 */
-	@SuppressWarnings("static-access")
 	public synchronized void getAxisResource(){
-		while(checkDone() == Constant.RUNNING){
+		while(toStop == Constant.YES||checkDone() == Constant.RUNNING){
 			if(toStop == Constant.YES){
 				stop();
 				toStop = Constant.NO;
-			}
-			try {
-				Thread.currentThread().sleep(1000L);
-			}catch (InterruptedException e) {
-				e.printStackTrace();
+				break;
 			}
 		}
 		while(busynessFlag == Constant.ISBUSYNESS){};
@@ -875,12 +781,12 @@ public class Axis {
 	/**
 	 * 等待轴停止
 	 */
-	@SuppressWarnings("static-access")
 	public synchronized void waitAxisStop(){
-		while(checkDone() == Constant.RUNNING){
+		while(toStop == Constant.YES||checkDone() == Constant.RUNNING){
 			if(toStop == Constant.YES){
 				stop();
 				toStop = Constant.NO;
+				break;
 			}
 		}
 	}
@@ -895,23 +801,36 @@ public class Axis {
 		this.position = 0;
 		this.busynessFlag = Constant.NOBUSYNESS;
 		this.toStop = Constant.NO;
-		//在初始化轴的时候就将脉冲输出模式设置进入
-		if(setPulseOutmode(Constant.PULSEMODE)){
-			pulseMode = Constant.PULSEMODE;
+		
+		//在初始化轴   设置脉冲模式
+		if(setPulseOutmode(Constant.PULSEMODEZERO)){
+			pulseMode = Constant.PULSEMODEZERO;
 		}else {
-			logger.info("Axis初始化失败，设置脉冲模式失败！");
+			logger.info("Axis初始化失败，{}失败！","setPulseOutmode");
+		}
+		
+		//设置EL模式
+		if(configELMode(Constant.ELMODEZERO)){
+			eLMode = Constant.ELMODEZERO;
+		}else {
+			logger.info("Axis初始化失败，{}失败！","configELMode");
+		}
+		
+		//设置原点信号
+		if(setHOMEPinLogic(Constant.ORGENABLELOW, Constant.ORGFILTERENABLE)){
+			orgEnableLevel = Constant.ORGENABLELOW;
+			orgFilter = Constant.ORGFILTERENABLE;
+		}else {
+			logger.info("Axis初始化失败，{}失败！","setHOMEPinLogic");
+		}
+		
+		if(configHomeMode(Constant.ORGMODEZERO)){
+			orgMode = Constant.ORGMODEZERO;
+		}else {
+			logger.info("Axis初始化失败，{}失败！","configHomeMode");
 		}
 	}
 	
-	
-	
-	public Logger getLogger() {
-		return logger;
-	}
-
-	public void setLogger(Logger logger) {
-		this.logger = logger;
-	}
 
 	public int getAxisNum() {
 		return axisNum;
@@ -919,30 +838,6 @@ public class Axis {
 
 	public void setAxisNum(int axisNum) {
 		this.axisNum = axisNum;
-	}
-
-	public int getElMode() {
-		return elMode;
-	}
-
-	public void setElMode(int elMode) {
-		this.elMode = elMode;
-	}
-
-	public int getOrgLogic() {
-		return orgLogic;
-	}
-
-	public void setOrgLogic(int orgLogic) {
-		this.orgLogic = orgLogic;
-	}
-
-	public int getFilter() {
-		return filter;
-	}
-
-	public void setFilter(int filter) {
-		this.filter = filter;
 	}
 
 	public int getDist() {
@@ -967,30 +862,6 @@ public class Axis {
 
 	public void setDir(int dir) {
 		this.dir = dir;
-	}
-
-	public int getMode() {
-		return mode;
-	}
-
-	public void setMode(int mode) {
-		this.mode = mode;
-	}
-
-	public int getEZCount() {
-		return EZCount;
-	}
-
-	public void setEZCount(int eZCount) {
-		EZCount = eZCount;
-	}
-
-	public int gethomeMode() {
-		return homeMode;
-	}
-
-	public void sethomeMode(int homeMode) {
-		this.homeMode = homeMode;
 	}
 
 	public int getVelMode() {
@@ -1082,31 +953,15 @@ public class Axis {
 	}
 
 	public double getCurrVel() {
-		return CurrVel;
+		return currVel;
 	}
 
 	public void setCurrVel(double currVel) {
-		CurrVel = currVel;
-	}
-
-	public String getCmd() {
-		return cmd;
-	}
-
-	public void setCmd(String cmd) {
-		this.cmd = cmd;
+		this.currVel = currVel;
 	}
 
 	public void setPosition(int position) {
 		this.position = position;
-	}
-	
-	public int getHomeMode() {
-		return homeMode;
-	}
-
-	public void setHomeMode(int homeMode) {
-		this.homeMode = homeMode;
 	}
 
 	public boolean isErrorFlag() {
@@ -1124,5 +979,44 @@ public class Axis {
 	public void setToStop(boolean toStop) {
 		this.toStop = toStop;
 	}
-	
+
+	public int geteLMode() {
+		return eLMode;
+	}
+
+	public void seteLMode(int eLMode) {
+		this.eLMode = eLMode;
+	}
+
+	public int getOrgEnableLevel() {
+		return orgEnableLevel;
+	}
+
+	public void setOrgEnableLevel(int orgEnableLevel) {
+		this.orgEnableLevel = orgEnableLevel;
+	}
+
+	public int getOrgFilter() {
+		return orgFilter;
+	}
+
+	public void setOrgFilter(int orgFilter) {
+		this.orgFilter = orgFilter;
+	}
+
+	public int getOrgMode() {
+		return orgMode;
+	}
+
+	public void setOrgMode(int orgMode) {
+		this.orgMode = orgMode;
+	}
+
+	public double getLength() {
+		return length;
+	}
+
+	public void setLength(double length) {
+		this.length = length;
+	}
 }
