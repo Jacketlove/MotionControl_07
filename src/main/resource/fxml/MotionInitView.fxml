@@ -214,11 +214,12 @@
 												<ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="103.0" />
 												<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="317.0" minWidth="10.0" prefWidth="98.0" />
 												<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="361.0" minWidth="10.0" prefWidth="86.0" />
-												<ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="248.0" minWidth="10.0" prefWidth="90.0" />
-                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="109.0" />
-												<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="110.0" />
-                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="266.0" minWidth="10.0" prefWidth="99.0" />
-                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="266.0" minWidth="10.0" prefWidth="107.0" />
+												<ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="248.0" minWidth="10.0" prefWidth="69.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="44.0" />
+												<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="105.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="44.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="370.0" minWidth="10.0" prefWidth="73.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="266.0" minWidth="10.0" prefWidth="220.0" />
 											</columnConstraints>
 											<rowConstraints>
 												<RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -235,14 +236,14 @@
 											</rowConstraints>
 											<children>
 												<Button mnemonicParsing="false" onAction="#wAxisStop" text="W停止" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-												<Button mnemonicParsing="false" onAction="#actionFactory" prefHeight="25.0" prefWidth="130.0" text="actionFactory" GridPane.columnIndex="5" GridPane.rowIndex="7" />
-												<Button mnemonicParsing="false" text="执行" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+												<Button mnemonicParsing="false" onAction="#actionFactory" prefHeight="25.0" prefWidth="130.0" text="actionFactory" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+												<Button mnemonicParsing="false" onAction="#allAxisPMove" text="执行" GridPane.columnIndex="8" GridPane.rowIndex="10" />
 												<Label text="多轴定点运动：" GridPane.columnIndex="1" GridPane.rowIndex="6" />
 												<Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-												<TextField GridPane.columnIndex="2" GridPane.rowIndex="7" />
-												<TextField GridPane.columnIndex="2" GridPane.rowIndex="8" />
-												<TextField GridPane.columnIndex="2" GridPane.rowIndex="9" />
-												<TextField GridPane.columnIndex="2" GridPane.rowIndex="10" />
+												<TextField GridPane.columnIndex="3" GridPane.rowIndex="7" fx:id="xPosition" />
+												<TextField fx:id="yPosition" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+												<TextField fx:id="zPosition" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+												<TextField fx:id="wPosition" GridPane.columnIndex="3" GridPane.rowIndex="10" />
 												<Label text="X" GridPane.columnIndex="1" GridPane.rowIndex="7" />
 												<Label text="Y" GridPane.columnIndex="1" GridPane.rowIndex="8" />
 												<Label text="Z" GridPane.columnIndex="1" GridPane.rowIndex="9" />
@@ -262,10 +263,6 @@
                                     <Button mnemonicParsing="false" onAction="#yAxisStop" text="Y停止" GridPane.columnIndex="6" GridPane.rowIndex="2" />
                                     <Button mnemonicParsing="false" onAction="#zAxisStop" text="Z停止" GridPane.columnIndex="6" GridPane.rowIndex="3" />
                                     <Button mnemonicParsing="false" onAction="#allAxisStop" text="所有轴停止" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-                                    <TextField GridPane.columnIndex="3" GridPane.rowIndex="7" />
-                                    <TextField GridPane.columnIndex="3" GridPane.rowIndex="8" />
-                                    <TextField GridPane.columnIndex="3" GridPane.rowIndex="9" />
-                                    <TextField GridPane.columnIndex="3" GridPane.rowIndex="10" />
                                     <Button mnemonicParsing="false" onAction="#xAxisGoHome" text="X轴回原点" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                                     <Button mnemonicParsing="false" onAction="#yAxisGoHome" text="Y轴回原点" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                                     <Button mnemonicParsing="false" onAction="#zAxisGoHome" text="Z轴回原点" GridPane.columnIndex="2" GridPane.rowIndex="3" />
@@ -309,7 +306,19 @@
                                     <Button mnemonicParsing="false" onAction="#zAxisGoELPlus" text="Z轴到E+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
                                     <Button mnemonicParsing="false" onAction="#wAxisGoELPlus" text="W轴到E+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
                                     <Button mnemonicParsing="false" onAction="#allAxisGoELPlus" text="XYW到E+" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-                                    <Button mnemonicParsing="false" onAction="#powerOn" text="powerOn" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                                    <Button mnemonicParsing="false" onAction="#powerOn" text="powerOn" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+                                    <Button mnemonicParsing="false" text="正" GridPane.columnIndex="5" />
+                                    <Button mnemonicParsing="false" text="负" GridPane.columnIndex="7" />
+                                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                                    <TextField GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                                    <TextField GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                                    <TextField GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                                    <TextField GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                                    <TextField GridPane.columnIndex="4" />
+                                    <TextField GridPane.columnIndex="8" />
 											</children>
 										</GridPane>
 									</children>

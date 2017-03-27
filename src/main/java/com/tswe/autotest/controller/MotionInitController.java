@@ -3,6 +3,7 @@ package com.tswe.autotest.controller;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.util.regex.Pattern;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.tswe.autotest.model.Axis;
 import com.tswe.autotest.model.ControlBoard;
@@ -91,6 +92,16 @@ public class MotionInitController implements Initializable{
     private ComboBox<String> wVelType;
     @FXML
     private ComboBox<String> tVelType;
+    @FXML
+    private TextField xPosition;
+    @FXML
+    private TextField yPosition;
+    @FXML
+    private TextField zPosition;
+    @FXML
+    private TextField wPosition;
+    @FXML
+    private TextField tPosition;
     @FXML
     private Label label;
     @FXML
@@ -189,10 +200,12 @@ public class MotionInitController implements Initializable{
 	@FXML
 	public void allAxisGoELPlus(){
 		//判断是否有资源执行此操作
-		if(controlBoards.get(0).getAxias()[Constant.XAXIA].isBusynessFlag() == Constant.ISBUSYNESS||
-				controlBoards.get(0).getAxias()[Constant.YAXIA].isBusynessFlag() == Constant.ISBUSYNESS||
-				controlBoards.get(0).getAxias()[Constant.WAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
+		if(isBusyness(controlBoards.get(0).getAxias()[Constant.XAXIA],
+				controlBoards.get(0).getAxias()[Constant.YAXIA],
+				controlBoards.get(0).getAxias()[Constant.WAXIA])){
 			return ;
+		}
+			
 		motionControlThread.setCmd("AllAxisGoELPlus");
 		new Thread(motionControlThread).start();
 	}
@@ -237,10 +250,10 @@ public class MotionInitController implements Initializable{
 	@FXML
 	public void allAxiaGoHome(){
 		//判断是否有资源执行此操作
-		if(controlBoards.get(0).getAxias()[Constant.XAXIA].isBusynessFlag()||
-				controlBoards.get(0).getAxias()[Constant.YAXIA].isBusynessFlag()||
-				controlBoards.get(0).getAxias()[Constant.ZAXIA].isBusynessFlag()||
-				controlBoards.get(0).getAxias()[Constant.WAXIA].isBusynessFlag())
+		if(controlBoards.get(0).getAxias()[Constant.XAXIA].isBusynessFlag() == Constant.ISBUSYNESS||
+				controlBoards.get(0).getAxias()[Constant.YAXIA].isBusynessFlag() == Constant.ISBUSYNESS||
+				controlBoards.get(0).getAxias()[Constant.ZAXIA].isBusynessFlag() == Constant.ISBUSYNESS||
+				controlBoards.get(0).getAxias()[Constant.WAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
 			return ;
 		motionControlThread.setCmd("allAxiaGoHome");
 		new Thread(motionControlThread).start();
@@ -251,7 +264,7 @@ public class MotionInitController implements Initializable{
 	 *********************************************************************************/
 	@FXML
 	public void xAxisSetVel(){
-		if(controlBoards.get(0).getAxias()[Constant.XAXIA].isBusynessFlag())
+		if(controlBoards.get(0).getAxias()[Constant.XAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
 			return ;
 		motionControlThread.setMaxVel(Double.parseDouble(xMaxVel.getText()));
 		motionControlThread.setMinVel(Double.parseDouble(xMinVel.getText()));
@@ -271,7 +284,7 @@ public class MotionInitController implements Initializable{
 	
 	@FXML
 	public void yAxisSetVel(){
-		if(controlBoards.get(0).getAxias()[Constant.YAXIA].isBusynessFlag())
+		if(controlBoards.get(0).getAxias()[Constant.YAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
 			return ;
 		motionControlThread.setMaxVel(Double.parseDouble(yMaxVel.getText()));
 		motionControlThread.setMinVel(Double.parseDouble(yMinVel.getText()));
@@ -291,7 +304,7 @@ public class MotionInitController implements Initializable{
 	
 	@FXML//Z轴速度设置
 	public void zAxisSetVel(){
-		if(controlBoards.get(0).getAxias()[Constant.ZAXIA].isBusynessFlag())
+		if(controlBoards.get(0).getAxias()[Constant.ZAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
 			return ;
 		motionControlThread.setMaxVel(Double.parseDouble(zMaxVel.getText()));
 		motionControlThread.setMinVel(Double.parseDouble(zMinVel.getText()));
@@ -311,7 +324,7 @@ public class MotionInitController implements Initializable{
 	
 	@FXML//W轴速度设置
 	public void wAxisSetVel(){
-		if(controlBoards.get(0).getAxias()[Constant.WAXIA].isBusynessFlag())
+		if(controlBoards.get(0).getAxias()[Constant.WAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
 			return ;
 		motionControlThread.setMaxVel(Double.parseDouble(wMaxVel.getText()));
 		motionControlThread.setMinVel(Double.parseDouble(wMinVel.getText()));
@@ -331,7 +344,7 @@ public class MotionInitController implements Initializable{
 	
 	@FXML//T轴速度设置
 	public void tAxisSetVel(){
-		if(controlBoards.get(0).getAxias()[Constant.TAXIA].isBusynessFlag())
+		if(controlBoards.get(0).getAxias()[Constant.TAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
 			return ;
 		motionControlThread.setMaxVel(Double.parseDouble(tMaxVel.getText()));
 		motionControlThread.setMinVel(Double.parseDouble(tMinVel.getText()));
@@ -352,11 +365,11 @@ public class MotionInitController implements Initializable{
 	@FXML
 	public void allAxisSetVel(){
 		//判断是否有资源执行此操作
-		if(controlBoards.get(0).getAxias()[Constant.XAXIA].isBusynessFlag()||
-				controlBoards.get(0).getAxias()[Constant.YAXIA].isBusynessFlag()||
-				controlBoards.get(0).getAxias()[Constant.ZAXIA].isBusynessFlag()||
-				controlBoards.get(0).getAxias()[Constant.WAXIA].isBusynessFlag()||
-				controlBoards.get(0).getAxias()[Constant.TAXIA].isBusynessFlag())
+		if(controlBoards.get(0).getAxias()[Constant.XAXIA].isBusynessFlag() == Constant.ISBUSYNESS||
+				controlBoards.get(0).getAxias()[Constant.YAXIA].isBusynessFlag() == Constant.ISBUSYNESS||
+				controlBoards.get(0).getAxias()[Constant.ZAXIA].isBusynessFlag() == Constant.ISBUSYNESS||
+				controlBoards.get(0).getAxias()[Constant.WAXIA].isBusynessFlag() == Constant.ISBUSYNESS||
+				controlBoards.get(0).getAxias()[Constant.TAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
 			return ;
 		//X轴参数传递
 		if("T形速度曲线".equals(xVelType.getSelectionModel().getSelectedItem())){
@@ -448,18 +461,18 @@ public class MotionInitController implements Initializable{
 	@FXML
 	public void powerOn(){
 		//判断是否有资源执行此操作
-		if(controlBoards.get(0).getAxias()[Constant.XAXIA].isBusynessFlag()||
-				controlBoards.get(0).getAxias()[Constant.YAXIA].isBusynessFlag()||
-				controlBoards.get(0).getAxias()[Constant.ZAXIA].isBusynessFlag()||
-				controlBoards.get(0).getAxias()[Constant.WAXIA].isBusynessFlag()||
-				controlBoards.get(0).getAxias()[Constant.TAXIA].isBusynessFlag())
+		if(controlBoards.get(0).getAxias()[Constant.XAXIA].isBusynessFlag() == Constant.ISBUSYNESS||
+				controlBoards.get(0).getAxias()[Constant.YAXIA].isBusynessFlag() == Constant.ISBUSYNESS||
+				controlBoards.get(0).getAxias()[Constant.ZAXIA].isBusynessFlag() == Constant.ISBUSYNESS||
+				controlBoards.get(0).getAxias()[Constant.WAXIA].isBusynessFlag() == Constant.ISBUSYNESS||
+				controlBoards.get(0).getAxias()[Constant.TAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
 			return ;
 		motionControlThread.setCmd("powerOn");
 		new Thread(motionControlThread).start();
 	}
 	
 	/*********************************************************************************
-	 ********************************** stop  ****************************************
+	 ********************************** stop *****************************************
 	 *********************************************************************************/
 	public void singleAxisStop(Axis axis){
 		if(axis.isBusynessFlag() == Constant.ISBUSYNESS){
@@ -499,5 +512,128 @@ public class MotionInitController implements Initializable{
 		singleAxisStop(controlBoards.get(0).getAxias()[Constant.TAXIA]);
 	}
 	
+	/*********************************************************************************
+	 ********************************** pmove ****************************************
+	 ***********************************定长运动****************************************/
+	@FXML//X轴正向
+	public void xAxisPMovePositive(){
+		
+	}
 	
+	@FXML//X轴负向
+	public void xAxisPMoveNegative(){
+		
+	}
+	
+	@FXML//Y轴正向
+	public void yAxisPMovePositive(){
+		
+	}
+	
+	@FXML//Y轴负向
+	public void yAxisPMoveNegative(){
+		
+	}
+	
+	@FXML//Z轴正向
+	public void zAxisPMovePositive(){
+		
+	}
+	
+	@FXML//Z轴负向
+	public void zAxisPMoveNegative(){
+		
+	}
+	
+	@FXML//W轴正向
+	public void wAxisPMovePositive(){
+		
+	}
+	
+	@FXML//W轴负向
+	public void wAxisPMoveNegative(){
+		
+	}
+	
+	@FXML//T轴正向
+	public void tAxisPMovePositive(){
+		
+	}
+	
+	@FXML//T轴负向
+	public void tAxisPMoveNegative(){
+		
+	}
+	
+	@FXML
+	public void allAxisPMove(){
+		int temp;
+		temp = isPositionInputValid(controlBoards.get(0).getAxias()[Constant.XAXIA],xPosition.getText());
+		if(temp == Integer.MAX_VALUE)
+			return;
+		motionControlThread.setxPosition(temp);
+		
+		temp = isPositionInputValid(controlBoards.get(0).getAxias()[Constant.YAXIA],yPosition.getText());
+		if(temp == Integer.MAX_VALUE)
+			return;
+		motionControlThread.setyPosition(temp);
+		
+		temp = isPositionInputValid(controlBoards.get(0).getAxias()[Constant.ZAXIA],zPosition.getText());
+		if(temp == Integer.MAX_VALUE)
+			return;
+		motionControlThread.setzPosition(temp);
+		
+		temp = isPositionInputValid(controlBoards.get(0).getAxias()[Constant.WAXIA],wPosition.getText());
+		if(temp == Integer.MAX_VALUE)
+			return;
+		motionControlThread.setwPosition(temp);
+		
+		motionControlThread.setCmd("allAxisPMove");
+		new Thread(motionControlThread).start();
+	}
+	/**
+	 * 判断输入的参数是否为数字，
+	 * 
+	 * @param input
+	 * @return  输入的数据为纯数字 输出true
+	 * 			输入的数据不为纯数字 输出false
+	 */
+	public boolean isInputValid(String input){
+		if(null == input||"".equals(input.trim()))
+			return false;
+		Pattern pattern = Pattern.compile("^[-\\+]?[\\d]*$");    
+		    return pattern.matcher(input.trim()).matches();   
+	}
+	
+	/**
+	 * 判断输入的position参数是否符合要求
+	 * 
+	 * @return
+	 * 			符合要求返回数值,
+	 * 			不符合要求返回Integer.MAX_VALUE;
+	 */
+	public int isPositionInputValid(Axis axis, String position){
+		if(isInputValid(position)){
+			int temp = Integer.parseInt(position);
+			if(0 <= temp && temp<= axis.getLength())
+				return temp;
+		}
+		return Integer.MAX_VALUE;
+	}
+	
+	/**
+	 * 如果输入的轴列表中有一个轴是繁忙的则返回false;
+	 * 如果全部处于空闲状态，则返回true;
+	 * 
+	 * @param axis 轴列表
+	 * @return
+	 */
+	public boolean isBusyness(Axis...axis){
+		for(Axis a: axis){
+			if(a.isBusynessFlag() == Constant.ISBUSYNESS){
+				return true;
+			}
+		}
+		return false;
+	}
 }

@@ -3,13 +3,12 @@ package com.tswe.autotest.service;
 import com.tswe.autotest.model.Axis;
 import com.tswe.autotest.model.ControlBoard;
 import com.tswe.common.constant.Constant;
-
 public class MotionControlThread implements Runnable{
 
 	ControlBoard controlBoard;
 	String cmd;
 	Axis axis;
-	
+
 	@SuppressWarnings("deprecation")
 	@Override
 	public void run() {
@@ -19,190 +18,44 @@ public class MotionControlThread implements Runnable{
 		
 		//单轴回原点
 		case "singleAxiaGoHome":
-			axis.getAxisResource();
-			axis.homeMove(Constant.REVERSEGOHOME, Constant.HIGHV);
-			axis.releaseAxisResource();
+			singleAxiaGoHome();
 			break;
 		
 		//XYZW回原点
 		case "allAxiaGoHome":
-			//获取轴资源
-			controlBoard.getAxias()[Constant.XAXIA].getAxisResource();
-			controlBoard.getAxias()[Constant.YAXIA].getAxisResource();
-			controlBoard.getAxias()[Constant.ZAXIA].getAxisResource();
-			controlBoard.getAxias()[Constant.WAXIA].getAxisResource();
-			//Z轴回原点
-			controlBoard.getAxias()[Constant.ZAXIA].
-			homeMove(Constant.REVERSEGOHOME, Constant.HIGHV);
-			//等待Z轴停止
-			controlBoard.getAxias()[Constant.ZAXIA].waitAxisStop();
-			//X轴回原点
-			controlBoard.getAxias()[Constant.XAXIA].
-			homeMove(Constant.REVERSEGOHOME, Constant.HIGHV);
-			//Y轴回原点
-			controlBoard.getAxias()[Constant.YAXIA].
-			homeMove(Constant.REVERSEGOHOME, Constant.HIGHV);
-			//W轴回原点
-			controlBoard.getAxias()[Constant.WAXIA].
-			homeMove(Constant.REVERSEGOHOME, Constant.HIGHV);
-			//等待XYW停止
-			controlBoard.getAxias()[Constant.XAXIA].waitAxisStop();
-			controlBoard.getAxias()[Constant.YAXIA].waitAxisStop();
-			controlBoard.getAxias()[Constant.WAXIA].waitAxisStop();
-			//释放资源
-			controlBoard.getAxias()[Constant.XAXIA].releaseAxisResource();
-			controlBoard.getAxias()[Constant.YAXIA].releaseAxisResource();
-			controlBoard.getAxias()[Constant.ZAXIA].releaseAxisResource();
-			controlBoard.getAxias()[Constant.WAXIA].releaseAxisResource();
+			allAxiaGoHome();
 			break;
 			
 		//单轴到EL+
 		case "singleAixsGoELPlus":
-			axis.getAxisResource();
-			axis.move(1);
-			axis.releaseAxisResource();
+			singleAixsGoELPlus();
 			break;
 			
 		//XYW到EL+
 		case "AllAxisGoELPlus":
-			//获取轴资源
-			controlBoard.getAxias()[Constant.XAXIA].getAxisResource();
-			controlBoard.getAxias()[Constant.YAXIA].getAxisResource();
-			controlBoard.getAxias()[Constant.ZAXIA].getAxisResource();
-			controlBoard.getAxias()[Constant.WAXIA].getAxisResource();
-			//Z轴回原点
-			controlBoard.getAxias()[Constant.ZAXIA].
-			homeMove(Constant.REVERSEGOHOME, Constant.HIGHV);
-			//等待Z轴停止
-			controlBoard.getAxias()[Constant.ZAXIA].waitAxisStop();
-			//发送到EL命令
-			controlBoard.getAxias()[Constant.XAXIA].move(1);
-			controlBoard.getAxias()[Constant.YAXIA].move(1);
-			controlBoard.getAxias()[Constant.WAXIA].move(1);
-			//等待停止
-			controlBoard.getAxias()[Constant.XAXIA].waitAxisStop();
-			controlBoard.getAxias()[Constant.YAXIA].waitAxisStop();
-			controlBoard.getAxias()[Constant.WAXIA].waitAxisStop();
-			//释放资源
-			controlBoard.getAxias()[Constant.XAXIA].releaseAxisResource();
-			controlBoard.getAxias()[Constant.ZAXIA].releaseAxisResource();
-			controlBoard.getAxias()[Constant.YAXIA].releaseAxisResource();
-			controlBoard.getAxias()[Constant.WAXIA].releaseAxisResource();
+			allAxisGoELPlus();
 			break;	
 		
 		case "powerOn":
-			//所有轴回原点
-			cmd = "allAxiaGoHome";
-			run();
-			//回到原点后，设置原点位置为0
-			controlBoard.getAxias()[Constant.XAXIA].setPosition(0);
-			controlBoard.getAxias()[Constant.YAXIA].setPosition(0);
-			controlBoard.getAxias()[Constant.ZAXIA].setPosition(0);
-			controlBoard.getAxias()[Constant.WAXIA].setPosition(0);
-			controlBoard.getAxias()[Constant.XAXIA].writePosition(0);
-			controlBoard.getAxias()[Constant.YAXIA].writePosition(0);
-			controlBoard.getAxias()[Constant.ZAXIA].writePosition(0);
-			controlBoard.getAxias()[Constant.WAXIA].writePosition(0);
-			//所有轴移动到EL+
-			cmd = "AllAxisGoELPlus";
-			run();
-			//轴移动到EL+后，读取位置信息，此位置信息即为轴长
-			controlBoard.getAxias()[Constant.XAXIA].setLength(
-					controlBoard.getAxias()[Constant.XAXIA].readPosition());
-			controlBoard.getAxias()[Constant.YAXIA].setLength(
-					controlBoard.getAxias()[Constant.YAXIA].readPosition());
-			controlBoard.getAxias()[Constant.ZAXIA].setLength(
-					controlBoard.getAxias()[Constant.ZAXIA].readPosition());
-			controlBoard.getAxias()[Constant.WAXIA].setLength(
-					controlBoard.getAxias()[Constant.WAXIA].readPosition());
-			
-			System.out.println(controlBoard.getAxias()[Constant.XAXIA].getLength());
-			System.out.println(controlBoard.getAxias()[Constant.YAXIA].getLength());
-			System.out.println(controlBoard.getAxias()[Constant.ZAXIA].getLength());
-			System.out.println(controlBoard.getAxias()[Constant.WAXIA].getLength());
+			powerOn();
 			break;
 			
 		//设置单轴速度
 		case "singleAxisSetVel":
-			//获取轴资源
-			axis.getAxisResource();
-			if(velType == Constant.TV){
-				if(axis.setVel(MinVel, MaxVel, Tacc, Tdec)){
-					axis.setMaxVel(MaxVel);
-					axis.setMinVel(MinVel);
-					axis.setTacc(Tacc);
-					axis.setTdec(Tdec);
-				}
-			}else if (velType == Constant.SV) {
-				if(axis.setVel(MinVel, MaxVel, Tacc, Tdec, Tsacc, Tsdec)){
-					axis.setMaxVel(MaxVel);
-					axis.setMinVel(MinVel);
-					axis.setTacc(Tacc);
-					axis.setTdec(Tdec);
-					axis.setTsacc(Tsacc);
-					axis.setTsdec(Tsdec);
-				}
-			}
-			//释放资源
-			axis.releaseAxisResource();
+			singleAxisSetVel();
 			break;
 		
 		//设置多轴速度	
 		case "allAxisSetVel":
-			axis = controlBoard.getAxias()[Constant.XAXIA];
-			velType = xVelType;
-			MaxVel = xMaxVel;
-			MinVel = xMinVel;
-			Tacc = xTacc;
-			Tdec = xTdec;
-			Tsacc = xTsacc;
-			Tsdec = xTsdec;
-			cmd = "singleAxisSetVel";
-			run();
+			allAxisSetVel();
+			break;
 			
-			axis = controlBoard.getAxias()[Constant.YAXIA];
-			velType = yVelType;
-			MaxVel = yMaxVel;
-			MinVel = yMinVel;
-			Tacc = yTacc;
-			Tdec = yTdec;
-			Tsacc = yTsacc;
-			Tsdec = yTsdec;
-			cmd = "singleAxisSetVel";
-			run();
+		case "singleAxisPMove":
 			
-			axis = controlBoard.getAxias()[Constant.ZAXIA];
-			velType = zVelType;
-			MaxVel = zMaxVel;
-			MinVel = zMinVel;
-			Tacc = zTacc;
-			Tdec = zTdec;
-			Tsacc = zTsacc;
-			Tsdec = zTsdec;
-			cmd = "singleAxisSetVel";
-			run();
+			break;
 			
-			axis = controlBoard.getAxias()[Constant.WAXIA];
-			velType = wVelType;
-			MaxVel = wMaxVel;
-			MinVel = wMinVel;
-			Tacc = wTacc;
-			Tdec = wTdec;
-			Tsacc = wTsacc;
-			Tsdec = wTsdec;
-			cmd = "singleAxisSetVel";
-			run();
-			
-			axis = controlBoard.getAxias()[Constant.TAXIA];
-			velType = tVelType;
-			MaxVel = tMaxVel;
-			MinVel = tMinVel;
-			Tacc = tTacc;
-			Tdec = tTdec;
-			Tsacc = tTsacc;
-			Tsdec = tTsdec;
-			cmd = "singleAxisSetVel";
-			run();
+		case "allAxisPMove":
+			allAxisPMove();
 			break;
 		default:
 			break;
@@ -311,7 +164,204 @@ public class MotionControlThread implements Runnable{
 	
 	private int velType;
 	
+	private int xPosition;
 	
+	private int yPosition;
+	
+	private int zPosition;
+	
+	private int wPosition;
+	
+	private int tPosition;
+	
+	public void singleAxiaGoHome(){
+		axis.getAxisResource();
+		axis.homeMove(Constant.GOHOMEREVERSE, Constant.GOHOMEHIGHV);
+		axis.releaseAxisResource();
+	}
+	
+	public void allAxiaGoHome(){
+		//获取轴资源
+		controlBoard.getAxias()[Constant.XAXIA].getAxisResource();
+		controlBoard.getAxias()[Constant.YAXIA].getAxisResource();
+		controlBoard.getAxias()[Constant.ZAXIA].getAxisResource();
+		controlBoard.getAxias()[Constant.WAXIA].getAxisResource();
+		//Z轴回原点
+		controlBoard.getAxias()[Constant.ZAXIA].
+		homeMove(Constant.GOHOMEREVERSE, Constant.GOHOMEHIGHV);
+		//等待Z轴停止
+		controlBoard.getAxias()[Constant.ZAXIA].waitAxisStop();
+		//X轴回原点
+		controlBoard.getAxias()[Constant.XAXIA].
+		homeMove(Constant.GOHOMEREVERSE, Constant.GOHOMEHIGHV);
+		//Y轴回原点
+		controlBoard.getAxias()[Constant.YAXIA].
+		homeMove(Constant.GOHOMEREVERSE, Constant.GOHOMEHIGHV);
+		//W轴回原点
+		controlBoard.getAxias()[Constant.WAXIA].
+		homeMove(Constant.GOHOMEREVERSE, Constant.GOHOMEHIGHV);
+		//等待XYW停止
+		controlBoard.getAxias()[Constant.XAXIA].waitAxisStop();
+		controlBoard.getAxias()[Constant.YAXIA].waitAxisStop();
+		controlBoard.getAxias()[Constant.WAXIA].waitAxisStop();
+		//释放资源
+		controlBoard.getAxias()[Constant.XAXIA].releaseAxisResource();
+		controlBoard.getAxias()[Constant.YAXIA].releaseAxisResource();
+		controlBoard.getAxias()[Constant.ZAXIA].releaseAxisResource();
+		controlBoard.getAxias()[Constant.WAXIA].releaseAxisResource();
+	}
+	
+	public void singleAixsGoELPlus(){
+		axis.getAxisResource();
+		axis.move(1);
+		axis.releaseAxisResource();
+	}
+	
+	public void allAxisGoELPlus(){
+		//获取轴资源
+		controlBoard.getAxias()[Constant.XAXIA].getAxisResource();
+		controlBoard.getAxias()[Constant.YAXIA].getAxisResource();
+		controlBoard.getAxias()[Constant.ZAXIA].getAxisResource();
+		controlBoard.getAxias()[Constant.WAXIA].getAxisResource();
+		//Z轴回原点
+		controlBoard.getAxias()[Constant.ZAXIA].
+		homeMove(Constant.GOHOMEREVERSE, Constant.GOHOMEHIGHV);
+		//等待Z轴停止
+		controlBoard.getAxias()[Constant.ZAXIA].waitAxisStop();
+		//发送到EL命令
+		controlBoard.getAxias()[Constant.XAXIA].move(1);
+		controlBoard.getAxias()[Constant.YAXIA].move(1);
+		controlBoard.getAxias()[Constant.WAXIA].move(1);
+		//等待停止
+		controlBoard.getAxias()[Constant.XAXIA].waitAxisStop();
+		controlBoard.getAxias()[Constant.YAXIA].waitAxisStop();
+		controlBoard.getAxias()[Constant.WAXIA].waitAxisStop();
+		//释放资源
+		controlBoard.getAxias()[Constant.XAXIA].releaseAxisResource();
+		controlBoard.getAxias()[Constant.ZAXIA].releaseAxisResource();
+		controlBoard.getAxias()[Constant.YAXIA].releaseAxisResource();
+		controlBoard.getAxias()[Constant.WAXIA].releaseAxisResource();
+	}
+	
+	public void powerOn(){
+		//所有轴回原点
+		cmd = "allAxiaGoHome";
+		run();
+		//回到原点后，设置原点位置为0
+		controlBoard.getAxias()[Constant.XAXIA].setPosition(0);
+		controlBoard.getAxias()[Constant.YAXIA].setPosition(0);
+		controlBoard.getAxias()[Constant.ZAXIA].setPosition(0);
+		controlBoard.getAxias()[Constant.WAXIA].setPosition(0);
+		controlBoard.getAxias()[Constant.XAXIA].writePosition(0);
+		controlBoard.getAxias()[Constant.YAXIA].writePosition(0);
+		controlBoard.getAxias()[Constant.ZAXIA].writePosition(0);
+		controlBoard.getAxias()[Constant.WAXIA].writePosition(0);
+		//所有轴移动到EL+
+		cmd = "AllAxisGoELPlus";
+		run();
+		//轴移动到EL+后，读取位置信息，此位置信息即为轴长
+		controlBoard.getAxias()[Constant.XAXIA].setLength(
+				controlBoard.getAxias()[Constant.XAXIA].readPosition());
+		controlBoard.getAxias()[Constant.YAXIA].setLength(
+				controlBoard.getAxias()[Constant.YAXIA].readPosition());
+		controlBoard.getAxias()[Constant.ZAXIA].setLength(
+				controlBoard.getAxias()[Constant.ZAXIA].readPosition());
+		controlBoard.getAxias()[Constant.WAXIA].setLength(
+				controlBoard.getAxias()[Constant.WAXIA].readPosition());
+		
+		System.out.println(controlBoard.getAxias()[Constant.XAXIA].getLength());
+		System.out.println(controlBoard.getAxias()[Constant.YAXIA].getLength());
+		System.out.println(controlBoard.getAxias()[Constant.ZAXIA].getLength());
+		System.out.println(controlBoard.getAxias()[Constant.WAXIA].getLength());
+	}
+	
+	public void singleAxisSetVel(){
+		//获取轴资源
+		axis.getAxisResource();
+		if(velType == Constant.TV){
+			if(axis.setVel(MinVel, MaxVel, Tacc, Tdec)){
+				axis.setMaxVel(MaxVel);
+				axis.setMinVel(MinVel);
+				axis.setTacc(Tacc);
+				axis.setTdec(Tdec);
+			}
+		}else if (velType == Constant.SV) {
+			if(axis.setVel(MinVel, MaxVel, Tacc, Tdec, Tsacc, Tsdec)){
+				axis.setMaxVel(MaxVel);
+				axis.setMinVel(MinVel);
+				axis.setTacc(Tacc);
+				axis.setTdec(Tdec);
+				axis.setTsacc(Tsacc);
+				axis.setTsdec(Tsdec);
+			}
+		}
+		//释放资源
+		axis.releaseAxisResource();
+	}
+	
+	public void allAxisSetVel(){
+		axis = controlBoard.getAxias()[Constant.XAXIA];
+		velType = xVelType;
+		MaxVel = xMaxVel;
+		MinVel = xMinVel;
+		Tacc = xTacc;
+		Tdec = xTdec;
+		Tsacc = xTsacc;
+		Tsdec = xTsdec;
+		cmd = "singleAxisSetVel";
+		run();
+		
+		axis = controlBoard.getAxias()[Constant.YAXIA];
+		velType = yVelType;
+		MaxVel = yMaxVel;
+		MinVel = yMinVel;
+		Tacc = yTacc;
+		Tdec = yTdec;
+		Tsacc = yTsacc;
+		Tsdec = yTsdec;
+		cmd = "singleAxisSetVel";
+		run();
+		
+		axis = controlBoard.getAxias()[Constant.ZAXIA];
+		velType = zVelType;
+		MaxVel = zMaxVel;
+		MinVel = zMinVel;
+		Tacc = zTacc;
+		Tdec = zTdec;
+		Tsacc = zTsacc;
+		Tsdec = zTsdec;
+		cmd = "singleAxisSetVel";
+		run();
+		
+		axis = controlBoard.getAxias()[Constant.WAXIA];
+		velType = wVelType;
+		MaxVel = wMaxVel;
+		MinVel = wMinVel;
+		Tacc = wTacc;
+		Tdec = wTdec;
+		Tsacc = wTsacc;
+		Tsdec = wTsdec;
+		cmd = "singleAxisSetVel";
+		run();
+		
+		axis = controlBoard.getAxias()[Constant.TAXIA];
+		velType = tVelType;
+		MaxVel = tMaxVel;
+		MinVel = tMinVel;
+		Tacc = tTacc;
+		Tdec = tTdec;
+		Tsacc = tTsacc;
+		Tsdec = tTsdec;
+		cmd = "singleAxisSetVel";
+		run();
+	}
+	
+	public void allAxisPMove(){
+		controlBoard.getAxias()[Constant.XAXIA].move(xPosition, Constant.POSIMODEABSOLUTE);
+		controlBoard.getAxias()[Constant.YAXIA].move(yPosition, Constant.POSIMODEABSOLUTE);
+		controlBoard.getAxias()[Constant.ZAXIA].move(zPosition, Constant.POSIMODEABSOLUTE);
+		controlBoard.getAxias()[Constant.WAXIA].move(wPosition, Constant.POSIMODEABSOLUTE);
+	}
 	
 	public ControlBoard getControlBoard() {
 		return controlBoard;
@@ -672,4 +722,46 @@ public class MotionControlThread implements Runnable{
 	public void settVelType(int tVelType) {
 		this.tVelType = tVelType;
 	}
+
+	public int getxPosition() {
+		return xPosition;
+	}
+
+	public void setxPosition(int xPosition) {
+		this.xPosition = xPosition;
+	}
+
+	public int getyPosition() {
+		return yPosition;
+	}
+
+	public void setyPosition(int yPosition) {
+		this.yPosition = yPosition;
+	}
+
+	public int getzPosition() {
+		return zPosition;
+	}
+
+	public void setzPosition(int zPosition) {
+		this.zPosition = zPosition;
+	}
+
+	public int getwPosition() {
+		return wPosition;
+	}
+
+	public void setwPosition(int wPosition) {
+		this.wPosition = wPosition;
+	}
+
+	public int gettPosition() {
+		return tPosition;
+	}
+
+	public void settPosition(int tPosition) {
+		this.tPosition = tPosition;
+	}
+	
+	
 }

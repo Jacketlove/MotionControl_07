@@ -84,11 +84,17 @@ public class Constant {
 	//1-home和EZ,目前只支持0
 	public static final int ORGMODEONE		= 1;
 	//回原点运动 高速
-	public static final int HIGHV 			= 1;
+	public static final int GOHOMEHIGHV 	= 1;
 	//回原点运动 低速
-	public static final int LOWV 			= 0;
+	public static final int GOHOMELOWV 		= 0;
 	//回原点运动  正向运动回原点
-	public static final int POSITIVEGOHOME 	= 1;
+	public static final int GOHOMEPOSITIVE 	= 1;
 	//回原点运动  反向运动回原点
-	public static final int REVERSEGOHOME 	= 2;
+	public static final int GOHOMEREVERSE 	= 2;
+	/***********定长运动相关**************/
+	//定长运动 位移模式绝对位移
+	public static final int POSIMODEABSOLUTE = 1;
+	//定长运动 位移模式相对位移
+	public static final int POSIMODERELATIVE = 0;
+	
 }

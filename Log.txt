@@ -2,12 +2,12 @@
 No CF.
 OPEN COM1 Success
 VERSION C3850 V16.0911.9
-Comm Init Success, VERSION V5.05
 
-ASSERT[414681](0) Failed in file comm.c:1138
-[110,111,3]
-ASSERT[10201318](0) Failed in file serial.c:630
-
-ASSERT[10201325](0) Failed in file serial.c:750
-
-Rerr::[0##366##]
+ASSERT[1941740](0) Failed in file comm.c:1138
+[101,102,3]
+ASSERT[1946304](0) Failed in file comm.c:1138
+[101,102,3]
+ASSERT[1950924](0) Failed in file comm.c:1138
+[101,102,3]Comm Init Success, VERSION V5.05
+ >>>>>>>>>> Comm_Exit
+Comm Exit Success
