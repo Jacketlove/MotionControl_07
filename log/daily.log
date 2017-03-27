@@ -36456,3 +36456,521 @@
 [2017-03-27 16:18:29 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:3
 [2017-03-27 16:18:29 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
 
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:0
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:0
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:0
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_HOME_pin_logic success
+
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:0
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_home_mode success
+
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_HOME_pin_logic success
+
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_home_mode success
+
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:2
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:2
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:2
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_HOME_pin_logic success
+
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:2
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_home_mode success
+
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:3
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:3
+[2017-03-27 17:39:56 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-27 17:39:57 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:3
+[2017-03-27 17:39:57 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_HOME_pin_logic success
+
+[2017-03-27 17:39:57 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:3
+[2017-03-27 17:39:57 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_home_mode success
+
+[2017-03-27 17:39:57 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:39:57 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-27 17:39:57 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:39:57 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-27 17:39:57 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:39:57 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_HOME_pin_logic success
+
+[2017-03-27 17:39:57 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:39:57 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_home_mode success
+
+[2017-03-27 17:39:57 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:35) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:0
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_home_mode success
+
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:0
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:2
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:2
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:3
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:3
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:40:00 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:40:18 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:40:18 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:40:18 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:40:18 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:40:18 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:40:27 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:40:27 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:40:27 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:40:27 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:40:27 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:40:35 INFO ] [Thread-8] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:40:35 INFO ] [Thread-8] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:40:35 INFO ] [Thread-8] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:40:35 INFO ] [Thread-8] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:40:35 INFO ] [Thread-8] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:40:37 INFO ] [Thread-9] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:40:37 INFO ] [Thread-9] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:40:38 INFO ] [Thread-9] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:40:38 INFO ] [Thread-9] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:40:38 INFO ] [Thread-9] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:0
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:0
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:0
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_HOME_pin_logic success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:0
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_home_mode success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_HOME_pin_logic success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_home_mode success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:2
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:2
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:2
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_HOME_pin_logic success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:2
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_home_mode success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:3
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:3
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:3
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_HOME_pin_logic success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:3
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_home_mode success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_pulse_outmode success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_EL_MODE success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_HOME_pin_logic success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_home_mode success
+
+[2017-03-27 17:43:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:35) - connectType：Serial Port, controlBoardNum:1,info:connectsuccess
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:0
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_config_home_mode success
+
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:0
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:2
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:2
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:3
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:3
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:4
+[2017-03-27 17:43:37 INFO ] [Thread-5] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:43:44 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:43:44 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_set_profile success
+
+[2017-03-27 17:43:44 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:43:44 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:43:44 INFO ] [Thread-6] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:04 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:04 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:04 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:04 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:04 INFO ] [Thread-7] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:05 INFO ] [Thread-8] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:05 INFO ] [Thread-8] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:05 INFO ] [Thread-8] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:05 INFO ] [Thread-8] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:05 INFO ] [Thread-8] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:07 INFO ] [Thread-9] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:07 INFO ] [Thread-9] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:07 INFO ] [Thread-9] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:07 INFO ] [Thread-9] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:07 INFO ] [Thread-9] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:09 INFO ] [Thread-10] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:09 INFO ] [Thread-10] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:09 INFO ] [Thread-10] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:09 INFO ] [Thread-10] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:09 INFO ] [Thread-10] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:10 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:10 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:16 INFO ] [Thread-11] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:16 INFO ] [Thread-11] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:16 INFO ] [Thread-11] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:16 INFO ] [Thread-11] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:16 INFO ] [Thread-11] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:18 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:18 INFO ] [Thread-12] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:18 INFO ] [Thread-12] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:18 INFO ] [Thread-12] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:18 INFO ] [Thread-12] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:18 INFO ] [Thread-12] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:19 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:20 INFO ] [Thread-13] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:20 INFO ] [Thread-13] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:20 INFO ] [Thread-13] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:20 INFO ] [Thread-13] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:20 INFO ] [Thread-13] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:22 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:30 INFO ] [Thread-14] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:30 INFO ] [Thread-14] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:30 INFO ] [Thread-14] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:30 INFO ] [Thread-14] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:30 INFO ] [Thread-14] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:30 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:30 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:31 INFO ] [Thread-15] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:31 INFO ] [Thread-15] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:31 INFO ] [Thread-15] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:31 INFO ] [Thread-15] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:31 INFO ] [Thread-15] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:31 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:31 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:32 INFO ] [Thread-16] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:32 INFO ] [Thread-16] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:32 INFO ] [Thread-16] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:32 INFO ] [Thread-16] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:32 INFO ] [Thread-16] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:32 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:32 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:33 INFO ] [Thread-17] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:33 INFO ] [Thread-17] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:33 INFO ] [Thread-17] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:33 INFO ] [Thread-17] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:33 INFO ] [Thread-17] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:34 INFO ] [Thread-18] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:34 INFO ] [Thread-18] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:34 INFO ] [Thread-18] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:34 INFO ] [Thread-18] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:34 INFO ] [Thread-18] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:34 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:35 INFO ] [Thread-19] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:35 INFO ] [Thread-19] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:35 INFO ] [Thread-19] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:35 INFO ] [Thread-19] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:35 INFO ] [Thread-19] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:36 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:36 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:36 INFO ] [Thread-20] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:36 INFO ] [Thread-20] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:36 INFO ] [Thread-20] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:36 INFO ] [Thread-20] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:36 INFO ] [Thread-20] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:37 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:37 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:37 INFO ] [Thread-21] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:37 INFO ] [Thread-21] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:37 INFO ] [Thread-21] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:37 INFO ] [Thread-21] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:37 INFO ] [Thread-21] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:38 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:38 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:39 INFO ] [Thread-22] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:39 INFO ] [Thread-22] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:39 INFO ] [Thread-22] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:39 INFO ] [Thread-22] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:39 INFO ] [Thread-22] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:40 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:40 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:40 INFO ] [Thread-23] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:40 INFO ] [Thread-23] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:40 INFO ] [Thread-23] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:40 INFO ] [Thread-23] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:40 INFO ] [Thread-23] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:41 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:41 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:42 INFO ] [Thread-24] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:42 INFO ] [Thread-24] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:43 INFO ] [Thread-24] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:43 INFO ] [Thread-24] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:43 INFO ] [Thread-24] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:43 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:44 INFO ] [Thread-25] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:44 INFO ] [Thread-25] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:44 INFO ] [Thread-25] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:44 INFO ] [Thread-25] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:44 INFO ] [Thread-25] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:44 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:44 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:44 INFO ] [Thread-26] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:44 INFO ] [Thread-26] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:45 INFO ] [Thread-26] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:45 INFO ] [Thread-26] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:45 INFO ] [Thread-26] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:45 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:45 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:45 INFO ] [Thread-27] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:45 INFO ] [Thread-27] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:46 INFO ] [Thread-27] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:46 INFO ] [Thread-27] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:46 INFO ] [Thread-27] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:46 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:46 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:47 INFO ] [Thread-28] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:47 INFO ] [Thread-28] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:47 INFO ] [Thread-28] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:47 INFO ] [Thread-28] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:47 INFO ] [Thread-28] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:47 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:47 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:48 INFO ] [Thread-29] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:48 INFO ] [Thread-29] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:48 INFO ] [Thread-29] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:48 INFO ] [Thread-29] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:48 INFO ] [Thread-29] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:48 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:48 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:49 INFO ] [Thread-30] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:49 INFO ] [Thread-30] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:49 INFO ] [Thread-30] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:49 INFO ] [Thread-30] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:49 INFO ] [Thread-30] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:49 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:49 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:49 INFO ] [Thread-31] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:49 INFO ] [Thread-31] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:49 INFO ] [Thread-31] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:49 INFO ] [Thread-31] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:49 INFO ] [Thread-31] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:50 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:50 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:50 INFO ] [Thread-32] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:50 INFO ] [Thread-32] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:50 INFO ] [Thread-32] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:50 INFO ] [Thread-32] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:50 INFO ] [Thread-32] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:51 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:51 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:51 INFO ] [Thread-33] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:51 INFO ] [Thread-33] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:51 INFO ] [Thread-33] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:51 INFO ] [Thread-33] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:51 INFO ] [Thread-33] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:52 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:52 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:52 INFO ] [Thread-34] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:52 INFO ] [Thread-34] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:52 INFO ] [Thread-34] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:52 INFO ] [Thread-34] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:52 INFO ] [Thread-34] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:53 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:53 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:53 INFO ] [Thread-35] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:53 INFO ] [Thread-35] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:53 INFO ] [Thread-35] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:53 INFO ] [Thread-35] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:53 INFO ] [Thread-35] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:54 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:54 INFO ] [Thread-36] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:54 INFO ] [Thread-36] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+
+[2017-03-27 17:44:54 INFO ] [Thread-36] (com.tswe.autotest.service.InitControlBoardService:368) - motion_check_done return:STOPING
+[2017-03-27 17:44:54 INFO ] [Thread-36] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:54 INFO ] [Thread-36] (com.tswe.autotest.service.InitControlBoardService:25) - motion_t_pmove success
+
+[2017-03-27 17:44:55 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:24) - AxisNum:1
+[2017-03-27 17:44:55 INFO ] [JavaFX Application Thread] (com.tswe.autotest.service.InitControlBoardService:25) - motion_imd_stop success
+

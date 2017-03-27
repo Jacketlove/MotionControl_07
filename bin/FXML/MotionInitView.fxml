@@ -291,16 +291,16 @@
                                           </FXCollections>
                                        </items>
                                     </ComboBox>
-                                    <Button mnemonicParsing="false" text="正" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                    <Button mnemonicParsing="false" onAction="#xAxisPMovePositive" text="正" GridPane.columnIndex="5" GridPane.rowIndex="1" />
                                     <Button mnemonicParsing="false" onAction="#allAxiaGoHome" text="XYZW回原点" GridPane.columnIndex="2" GridPane.rowIndex="5" />
                                     <Button mnemonicParsing="false" text="T停止" GridPane.columnIndex="6" />
-                                    <Button mnemonicParsing="false" text="正" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-                                    <Button mnemonicParsing="false" text="正" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-                                    <Button mnemonicParsing="false" text="正" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-                                    <Button mnemonicParsing="false" text="负" GridPane.columnIndex="7" GridPane.rowIndex="1" />
-                                    <Button mnemonicParsing="false" text="负" GridPane.columnIndex="7" GridPane.rowIndex="2" />
-                                    <Button mnemonicParsing="false" text="负" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-                                    <Button mnemonicParsing="false" text="负" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                                    <Button mnemonicParsing="false" onAction="#yAxisPMovePositive" text="正" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                                    <Button mnemonicParsing="false" onAction="#zAxisPMovePositive" text="正" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                                    <Button mnemonicParsing="false" onAction="#wAxisPMovePositive" text="正" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                                    <Button mnemonicParsing="false" onAction="#xAxisPMoveNegative" text="负" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                                    <Button mnemonicParsing="false" onAction="#yAxisPMoveNegative" text="负" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                                    <Button mnemonicParsing="false" onAction="#zAxisPMoveNegative" text="负" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                                    <Button mnemonicParsing="false" onAction="#wAxisPMoveNegative" text="负" GridPane.columnIndex="7" GridPane.rowIndex="4" />
                                     <Button mnemonicParsing="false" onAction="#xAxisGoELPlus" text="X轴到E+" GridPane.columnIndex="3" GridPane.rowIndex="1" />
                                     <Button mnemonicParsing="false" onAction="#yAxisGoELPlus" text="Y轴到E+" GridPane.columnIndex="3" GridPane.rowIndex="2" />
                                     <Button mnemonicParsing="false" onAction="#zAxisGoELPlus" text="Z轴到E+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
@@ -309,14 +309,14 @@
                                     <Button mnemonicParsing="false" onAction="#powerOn" text="powerOn" GridPane.columnIndex="9" GridPane.rowIndex="8" />
                                     <Button mnemonicParsing="false" text="正" GridPane.columnIndex="5" />
                                     <Button mnemonicParsing="false" text="负" GridPane.columnIndex="7" />
-                                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="4" />
-                                    <TextField GridPane.columnIndex="8" GridPane.rowIndex="1" />
-                                    <TextField GridPane.columnIndex="8" GridPane.rowIndex="2" />
-                                    <TextField GridPane.columnIndex="8" GridPane.rowIndex="3" />
-                                    <TextField GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="1" fx:id="xDistPositive" />
+                                    <TextField fx:id="yDistPositive" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                    <TextField fx:id="zDistPositive" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                    <TextField fx:id="wDistPositive" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                                    <TextField GridPane.columnIndex="8" GridPane.rowIndex="1" fx:id="xDistRelative" />
+                                    <TextField fx:id="yDistRelative" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                                    <TextField fx:id="zDistRelative" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                                    <TextField fx:id="wDistRelative" GridPane.columnIndex="8" GridPane.rowIndex="4" />
                                     <TextField GridPane.columnIndex="4" />
                                     <TextField GridPane.columnIndex="8" />
 											</children>

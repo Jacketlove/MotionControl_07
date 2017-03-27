@@ -15,7 +15,6 @@ public class MotionControlThread implements Runnable{
 		boolean stopFlag = false;
 		switch (cmd) {
 		
-		
 		//单轴回原点
 		case "singleAxiaGoHome":
 			singleAxiaGoHome();
@@ -52,6 +51,10 @@ public class MotionControlThread implements Runnable{
 			
 		case "singleAxisPMove":
 			
+			break;
+		
+		case "singleAxiaPMove":
+			singleAxiaPMove();
 			break;
 			
 		case "allAxisPMove":
@@ -173,6 +176,8 @@ public class MotionControlThread implements Runnable{
 	private int wPosition;
 	
 	private int tPosition;
+	
+	private int Dist;
 	
 	public void singleAxiaGoHome(){
 		axis.getAxisResource();
@@ -354,6 +359,12 @@ public class MotionControlThread implements Runnable{
 		Tsdec = tTsdec;
 		cmd = "singleAxisSetVel";
 		run();
+	}
+	
+	public void singleAxiaPMove(){
+		axis.getAxisResource();
+	    axis.move(Dist,Constant.POSIMODERELATIVE);
+	    axis.releaseAxisResource();
 	}
 	
 	public void allAxisPMove(){
@@ -762,6 +773,13 @@ public class MotionControlThread implements Runnable{
 	public void settPosition(int tPosition) {
 		this.tPosition = tPosition;
 	}
-	
-	
+
+	public int getDist() {
+		return Dist;
+	}
+
+	public void setDist(int dist) {
+		Dist = dist;
+	}
+
 }

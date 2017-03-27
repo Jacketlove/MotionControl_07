@@ -102,6 +102,22 @@ public class MotionInitController implements Initializable{
     private TextField wPosition;
     @FXML
     private TextField tPosition;
+	@FXML
+	private TextField xDistPositive;
+	@FXML
+	private TextField yDistPositive;
+	@FXML
+	private TextField zDistPositive;
+	@FXML
+	private TextField wDistPositive;
+	@FXML
+	private TextField xDistRelative;
+	@FXML
+	private TextField yDistRelative;
+	@FXML
+	private TextField zDistRelative;
+	@FXML
+	private TextField wDistRelative;
     @FXML
     private Label label;
     @FXML
@@ -515,54 +531,85 @@ public class MotionInitController implements Initializable{
 	/*********************************************************************************
 	 ********************************** pmove ****************************************
 	 ***********************************定长运动****************************************/
+	
 	@FXML//X轴正向
 	public void xAxisPMovePositive(){
-		
+		if(controlBoards.get(0).getAxias()[Constant.XAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
+			return ;	
+		motionControlThread.setDist(Integer.parseInt(xDistPositive.getText()));
+		motionControlThread.setAxis(controlBoards.get(0).getAxias()[Constant.XAXIA]);
+		motionControlThread.setCmd("singleAxiaPMove");
+		new Thread(motionControlThread).start();
 	}
 	
 	@FXML//X轴负向
 	public void xAxisPMoveNegative(){
-		
+		if(controlBoards.get(0).getAxias()[Constant.XAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
+			return ;	
+		motionControlThread.setDist((0-Integer.parseInt(xDistRelative.getText())));
+		motionControlThread.setAxis(controlBoards.get(0).getAxias()[Constant.XAXIA]);
+		motionControlThread.setCmd("singleAxiaPMove");
+		new Thread(motionControlThread).start();
 	}
 	
 	@FXML//Y轴正向
 	public void yAxisPMovePositive(){
-		
+		if(controlBoards.get(0).getAxias()[Constant.YAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
+			return ;	
+		motionControlThread.setDist(Integer.parseInt(yDistPositive.getText()));
+		motionControlThread.setAxis(controlBoards.get(0).getAxias()[Constant.YAXIA]);
+		motionControlThread.setCmd("singleAxiaPMove");
+		new Thread(motionControlThread).start();
 	}
 	
 	@FXML//Y轴负向
 	public void yAxisPMoveNegative(){
-		
+		if(controlBoards.get(0).getAxias()[Constant.YAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
+			return ;	
+		motionControlThread.setDist((0-Integer.parseInt(yDistRelative.getText())));
+		motionControlThread.setAxis(controlBoards.get(0).getAxias()[Constant.YAXIA]);
+		motionControlThread.setCmd("singleAxiaPMove");
+		new Thread(motionControlThread).start();
 	}
 	
 	@FXML//Z轴正向
 	public void zAxisPMovePositive(){
-		
+		if(controlBoards.get(0).getAxias()[Constant.ZAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
+			return ;	
+		motionControlThread.setDist((0-Integer.parseInt(zDistPositive.getText())));
+		motionControlThread.setAxis(controlBoards.get(0).getAxias()[Constant.ZAXIA]);
+		motionControlThread.setCmd("singleAxiaPMove");
+		new Thread(motionControlThread).start();
 	}
 	
 	@FXML//Z轴负向
 	public void zAxisPMoveNegative(){
-		
+		if(controlBoards.get(0).getAxias()[Constant.ZAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
+			return ;	
+		motionControlThread.setDist(Integer.parseInt(zDistRelative.getText()));
+		motionControlThread.setAxis(controlBoards.get(0).getAxias()[Constant.ZAXIA]);
+		motionControlThread.setCmd("singleAxiaPMove");
+		new Thread(motionControlThread).start();
 	}
 	
 	@FXML//W轴正向
 	public void wAxisPMovePositive(){
-		
+		if(controlBoards.get(0).getAxias()[Constant.WAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
+			return ;	
+		motionControlThread.setDist(Integer.parseInt(wDistPositive.getText()));
+		motionControlThread.setAxis(controlBoards.get(0).getAxias()[Constant.WAXIA]);
+		motionControlThread.setCmd("singleAxiaPMove");
+		new Thread(motionControlThread).start();
 	}
 	
 	@FXML//W轴负向
 	public void wAxisPMoveNegative(){
-		
-	}
-	
-	@FXML//T轴正向
-	public void tAxisPMovePositive(){
-		
-	}
-	
-	@FXML//T轴负向
-	public void tAxisPMoveNegative(){
-		
+		if(controlBoards.get(0).getAxias()[Constant.WAXIA].isBusynessFlag() == Constant.ISBUSYNESS)
+			return ;	
+		motionControlThread.setDist((0-Integer.parseInt(wDistRelative.getText())));
+		motionControlThread.setAxis(controlBoards.get(0).getAxias()[Constant.WAXIA]);
+		motionControlThread.setCmd("singleAxiaPMove");
+		new Thread(motionControlThread).start();
 	}
 	
 	@FXML

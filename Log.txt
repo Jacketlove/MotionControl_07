@@ -3,11 +3,50 @@ No CF.
 OPEN COM1 Success
 VERSION C3850 V16.0911.9
 
-ASSERT[1941740](0) Failed in file comm.c:1138
+ASSERT[1410144](0) Failed in file comm.c:1138
 [101,102,3]
-ASSERT[1946304](0) Failed in file comm.c:1138
+ASSERT[1414752](0) Failed in file comm.c:1138
 [101,102,3]
-ASSERT[1950924](0) Failed in file comm.c:1138
+ASSERT[1419362](0) Failed in file comm.c:1138
+[101,102,3]
+ASSERT[1423977](0) Failed in file comm.c:1138
 [101,102,3]Comm Init Success, VERSION V5.05
- >>>>>>>>>> Comm_Exit
+
+ASSERT[37329975](0) Failed in file serial.c:630
+
+ASSERT[37329982](0) Failed in file serial.c:750
+
+Rerr::[0##366##]
+ASSERT[63579522](0) Failed in file serial.c:630
+
+ASSERT[63579530](0) Failed in file serial.c:750
+
+Rerr::[0##366##]
+ASSERT[68750513](0) Failed in file serial.c:630
+
+ASSERT[68750521](0) Failed in file serial.c:750
+
+Rerr::[0##366##]
+ASSERT[71253639](0) Failed in file serial.c:630
+
+ASSERT[71253647](0) Failed in file serial.c:750
+
+Rerr::[0##366##]
+ASSERT[74285731](0) Failed in file serial.c:630
+
+ASSERT[74285739](0) Failed in file serial.c:750
+
+Rerr::[0##366##]
+ASSERT[75447791](0) Failed in file serial.c:630
+
+ASSERT[75447798](0) Failed in file serial.c:750
+
+Rerr::[0##366##]
+ASSERT[76509428](0) Failed in file comm.c:1138
+[195,196,3]
+ASSERT[81826937](0) Failed in file serial.c:630
+
+ASSERT[81826944](0) Failed in file serial.c:750
+
+Rerr::[0##366##] >>>>>>>>>> Comm_Exit
 Comm Exit Success
