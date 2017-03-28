@@ -126,6 +126,9 @@ public class MotionInitController implements Initializable{
 	private RadioButton serialPort;
 	@FXML
 	private ToggleGroup connectPortGroup;
+	@FXML
+	private TextField xCurrentVel;
+	
 	@Autowired
 	private InitControlBoardService initControlBoardService;
 	
@@ -158,8 +161,28 @@ public class MotionInitController implements Initializable{
 			dialogMsg += "连接方式:"+connectType+"\n";
 			dialogMsg += "连接控制板量?"+controlBoards.size();
 			motionControlThread = new MotionControlThread(controlBoards.get(0));
+			
+			Thread thread = new Thread(){
+				@SuppressWarnings("static-access")
+				@Override
+				public void run() {
+					while(true){
+						xCurrentVel.setText(String.valueOf(controlBoards.get(0).getAxias()[Constant.XAXIA].readPosition()));
+						try {
+							Thread.currentThread().sleep(1000l);
+						} catch (InterruptedException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+						super.run();
+					}
+				}
+			};
+			thread.start();
+			
 		}
 		DialogsUtil.show(dialogType, dialogTitle, dialogMsg);
+		
 	}
 
 	@FXML
@@ -175,6 +198,7 @@ public class MotionInitController implements Initializable{
 	public void initialize(URL location, ResourceBundle resources) {
 		connectPortGroup.selectToggle(serialPort);
 		//初始化4个轴的EL配置
+		
 	}
 	
 	@FXML

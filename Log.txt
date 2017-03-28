@@ -2,51 +2,74 @@
 No CF.
 OPEN COM1 Success
 VERSION C3850 V16.0911.9
+Comm Init Success, VERSION V5.05
 
-ASSERT[1410144](0) Failed in file comm.c:1138
-[101,102,3]
-ASSERT[1414752](0) Failed in file comm.c:1138
-[101,102,3]
-ASSERT[1419362](0) Failed in file comm.c:1138
-[101,102,3]
-ASSERT[1423977](0) Failed in file comm.c:1138
-[101,102,3]Comm Init Success, VERSION V5.05
+ASSERT[402317](0) Failed in file comm.c:1138
+[109,110,3]
+ASSERT[490372](0) Failed in file comm.c:1138
+[111,112,3]
+ASSERT[2114423](0) Failed in file serial.c:630
 
-ASSERT[37329975](0) Failed in file serial.c:630
-
-ASSERT[37329982](0) Failed in file serial.c:750
+ASSERT[2114430](0) Failed in file serial.c:750
 
 Rerr::[0##366##]
-ASSERT[63579522](0) Failed in file serial.c:630
+ASSERT[78773784](0) Failed in file serial.c:630
 
-ASSERT[63579530](0) Failed in file serial.c:750
-
-Rerr::[0##366##]
-ASSERT[68750513](0) Failed in file serial.c:630
-
-ASSERT[68750521](0) Failed in file serial.c:750
+ASSERT[78773792](0) Failed in file serial.c:750
 
 Rerr::[0##366##]
-ASSERT[71253639](0) Failed in file serial.c:630
+ASSERT[85403221](0) Failed in file serial.c:630
 
-ASSERT[71253647](0) Failed in file serial.c:750
-
-Rerr::[0##366##]
-ASSERT[74285731](0) Failed in file serial.c:630
-
-ASSERT[74285739](0) Failed in file serial.c:750
+ASSERT[85403228](0) Failed in file serial.c:750
 
 Rerr::[0##366##]
-ASSERT[75447791](0) Failed in file serial.c:630
+ASSERT[92025478](0) Failed in file serial.c:630
 
-ASSERT[75447798](0) Failed in file serial.c:750
+ASSERT[92025483](0) Failed in file serial.c:750
 
 Rerr::[0##366##]
-ASSERT[76509428](0) Failed in file comm.c:1138
-[195,196,3]
-ASSERT[81826937](0) Failed in file serial.c:630
+ASSERT[97590750](0) Failed in file serial.c:630
 
-ASSERT[81826944](0) Failed in file serial.c:750
+ASSERT[97590758](0) Failed in file serial.c:750
 
-Rerr::[0##366##] >>>>>>>>>> Comm_Exit
-Comm Exit Success
+Rerr::[0##366##]
+ASSERT[100038761](0) Failed in file serial.c:630
+
+ASSERT[100038768](0) Failed in file serial.c:750
+
+Rerr::[0##366##]
+ASSERT[114084495](0) Failed in file serial.c:630
+
+ASSERT[114084503](0) Failed in file serial.c:750
+
+Rerr::[0##366##]
+ASSERT[127055976](0) Failed in file serial.c:630
+
+ASSERT[127055984](0) Failed in file serial.c:750
+
+Rerr::[0##366##]
+ASSERT[130534146](0) Failed in file serial.c:630
+
+ASSERT[130534153](0) Failed in file serial.c:750
+
+Rerr::[0##366##]
+ASSERT[131894245](0) Failed in file serial.c:630
+
+ASSERT[131894253](0) Failed in file serial.c:750
+
+Rerr::[0##366##]
+ASSERT[141762754](0) Failed in file serial.c:630
+
+ASSERT[141762762](0) Failed in file serial.c:750
+
+Rerr::[0##366##]
+ASSERT[143130807](0) Failed in file serial.c:630
+
+ASSERT[143130814](0) Failed in file serial.c:750
+
+Rerr::[0##366##]
+ASSERT[145587946](0) Failed in file serial.c:630
+
+ASSERT[145587954](0) Failed in file serial.c:750
+
+Rerr::[0##366##]

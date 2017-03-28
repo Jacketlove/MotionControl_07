@@ -34,6 +34,8 @@ dependencies {
     implementation 'com.google.guava:guava:20.0'
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+    // https://mvnrepository.com/artifact/org.aspectj/aspectjrt
+	compile group: 'org.aspectj', name: 'aspectjrt', version: '1.8.10'
     
     /*****************************spring library***********************************/
 	// https://mvnrepository.com/artifact/org.springframework/spring-context
@@ -88,14 +90,7 @@ dependencies {
 
     
     /*****************************common library***********************************/
-    // https://mvnrepository.com/artifact/org.apache.commons/commons-io
-	compile group: 'org.apache.commons', name: 'commons-io', version: '1.3.2'
-	// https://mvnrepository.com/artifact/org.slf4j/slf4j-api
-	compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.24'
-	// https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12
-	compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.24'
-	// https://mvnrepository.com/artifact/org.aspectj/aspectjrt
-	compile group: 'org.aspectj', name: 'aspectjrt', version: '1.8.10'
+
 	
 }
 

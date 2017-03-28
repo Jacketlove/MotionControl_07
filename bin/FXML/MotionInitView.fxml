@@ -319,6 +319,7 @@
                                     <TextField fx:id="wDistRelative" GridPane.columnIndex="8" GridPane.rowIndex="4" />
                                     <TextField GridPane.columnIndex="4" />
                                     <TextField GridPane.columnIndex="8" />
+                                    <TextField GridPane.columnIndex="6" GridPane.rowIndex="7" fx:id="xCurrentVel" />
 											</children>
 										</GridPane>
 									</children>
